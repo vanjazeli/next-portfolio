@@ -1,5 +1,5 @@
-import MainWrap from './components/containers/MainWrap';
+import Icon from './components/ui/Icon';
 
 export default function Home() {
-	return <MainWrap></MainWrap>;
+	return <Icon className="w-20" variant="location" />;
 }
