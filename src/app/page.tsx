@@ -1,4 +1,5 @@
 import Header from './components/containers/Header/Header';
+import { content } from './components/containers/Header/Header.content';
 
 export default function Home() {
 	return (
@@ -6,7 +7,7 @@ export default function Home() {
 			<div className="container px-6 mx-auto lg:px-40">
 				<div className="lg:w-full lg:flex lg:gap-5 oultine-1 min-h-dvh">
 					<div className="lg:w-1/2">
-						<Header />
+						<Header content={content} />
 					</div>
 					{/* <div className="lg:w-1/2">test</div> */}
 				</div>

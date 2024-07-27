@@ -1,9 +1,13 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import Icon from '../../ui/Icon/Icon';
-import { content } from './Header.content';
+import { HeaderContentT } from './Header.types';
 
-export default function Header() {
+type HeaderProps = {
+	content: HeaderContentT;
+};
+
+export default function Header({ content }: HeaderProps) {
 	const { topInfo, bottomLinks } = content;
 	const { image, headingLink, position, description, additionalInfo } = topInfo;
 
