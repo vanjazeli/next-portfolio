@@ -28,10 +28,10 @@ export default function Header() {
 				</div>
 			)}
 			{bottomLinks && (
-				<ul className="flex gap-4">
+				<ul className="flex gap-4 text-slate-400">
 					{bottomLinks.map((bottomLink, index) => (
 						<li className="w-8" key={index}>
-							<Link href={bottomLink.url} target={bottomLink.target}>
+							<Link className="hover:opacity-70 transition-opacity" href={bottomLink.url} target={bottomLink.target}>
 								<Icon variant={bottomLink.iconVariant} />
 							</Link>
 						</li>
