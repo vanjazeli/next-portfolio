@@ -13,7 +13,7 @@ export default function ArrowLink({ href, text, target, className }: ArrowLinkPr
 	return (
 		<Link className={classNames('group flex align-center gap-1 text-slate-200 hover:text-blue-500 transition-colors w-fit', className)} href={href} target={target}>
 			<span className="font-bold">{text}</span>
-			<Icon className="w-4 group-hover:-rotate-45 transition-transform" variant="arrow-right" />
+			<Icon className="w-4 group-hover:rotate-45 transition-transform" variant="arrow-top-right" />
 		</Link>
 	);
 }
