@@ -1,4 +1,6 @@
-const content = {
+import type { HeaderContentT } from './Header.types';
+
+export const content: HeaderContentT = {
 	topInfo: {
 		image: {
 			url: '/vanja-zeli.png',
@@ -11,26 +13,28 @@ const content = {
 			text: 'Vanja Želi',
 		},
 		position: 'Mid-level Front-end Engineer',
-		description: `A self-taught front-end developer, big time <span className="font-bold text-white">fast food junkie</span> and just a typical nerd who's <span className="font-bold text-white">nuts for technology</span>.`,
+		description: `A self-taught front-end developer, big time <span class="font-bold text-white">fast food junkie</span> and just a typical nerd who's <span class="font-bold text-white">nuts for technology</span>.`,
 	},
 	bottomLinks: [
 		{
 			url: 'tel:+381363982390',
 			iconVariant: 'phone',
+			target: '_blank',
 		},
 		{
 			url: 'mailto:vanjazeli@gmail.com',
 			iconVariant: 'email',
+			target: '_blank',
 		},
 		{
 			url: 'https://www.linkedin.com/in/vanja-zeli',
 			iconVariant: 'linkedin',
+			target: '_blank',
 		},
 		{
 			url: 'https://www.github.com/vanjazeli ',
 			iconVariant: 'github',
+			target: '_blank',
 		},
 	],
 };
-
-export default content;

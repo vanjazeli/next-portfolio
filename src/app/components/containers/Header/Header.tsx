@@ -1,10 +1,7 @@
-'use client';
-
 import Link from 'next/link';
 import Image from 'next/image';
 import Icon from '../../ui/Icon/Icon';
-import content from './Header.content';
-import { IconVariants } from '../../ui/Icon/Icon.types';
+import { content } from './Header.content';
 
 export default function Header() {
 	const { topInfo, bottomLinks } = content;
@@ -34,8 +31,8 @@ export default function Header() {
 				<ul className="flex gap-4">
 					{bottomLinks.map((bottomLink, index) => (
 						<li className="w-8" key={index}>
-							<Link href={bottomLink.url}>
-								<Icon variant={bottomLink.iconVariant as IconVariants} />
+							<Link href={bottomLink.url} target={bottomLink.target}>
+								<Icon variant={bottomLink.iconVariant} />
 							</Link>
 						</li>
 					))}

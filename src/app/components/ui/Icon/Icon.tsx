@@ -1,7 +1,7 @@
-import type { IconVariants } from './Icon.types';
+import type { IconVariantsT } from './Icon.types';
 
 type IconProps = {
-	variant: IconVariants;
+	variant: IconVariantsT;
 	className?: string;
 };
 
