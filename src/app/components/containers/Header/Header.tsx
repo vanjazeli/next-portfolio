@@ -5,14 +5,14 @@ import { content } from './Header.content';
 
 export default function Header() {
 	const { topInfo, bottomLinks } = content;
-	const { image, headingLink, position, description } = topInfo;
+	const { image, headingLink, position, description, additionalInfo } = topInfo;
 
 	return (
 		<header className="h-full lg:flex lg:flex-col lg:justify-between lg:py-24 lg:sticky lg:top-0 lg:max-h-dvh">
 			{topInfo && (
 				<div>
 					{image && (
-						<div className="mb-4 w-52 h-52 rounded-full overflow-hidden">
+						<div className="mb-6 w-52 h-52 rounded-full overflow-hidden">
 							<Image src={image.url} alt={image.alt} height={image.height} width={image.width} priority />
 						</div>
 					)}
@@ -25,6 +25,16 @@ export default function Header() {
 					)}
 					{position && <h2 className="mb-4 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">{position}</h2>}
 					{description && <p className="mb-4 max-w-xs leading-normal text-slate-400" dangerouslySetInnerHTML={{ __html: description }} />}
+					{additionalInfo && (
+						<ul className="flex flex-col gap-1">
+							{additionalInfo.map(({ iconVariant, text }) => (
+								<li className="flex align-center gap-2 text-slate-400">
+									<Icon className="w-4" variant={iconVariant} />
+									<span>{text}</span>
+								</li>
+							))}
+						</ul>
+					)}
 				</div>
 			)}
 			{bottomLinks && (

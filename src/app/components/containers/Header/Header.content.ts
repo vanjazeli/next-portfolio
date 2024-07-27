@@ -14,13 +14,22 @@ export const content: HeaderContentT = {
 		},
 		position: 'Mid-level Front-end Engineer',
 		description: `A self-taught front-end developer, a big time <span class="font-bold text-white">fast food junkie</span> and just a typical nerd who's <span class="font-bold text-white">nuts for technology</span>.`,
+		additionalInfo: [
+			{
+				iconVariant: 'location',
+				text: 'Novi Sad, Serbia',
+			},
+			{
+				iconVariant: 'job',
+				text: 'Vega IT',
+			},
+			{
+				iconVariant: 'education',
+				text: 'Mechatronics',
+			},
+		],
 	},
 	bottomLinks: [
-		{
-			url: 'tel:+381363982390',
-			iconVariant: 'phone',
-			target: '_blank',
-		},
 		{
 			url: 'mailto:vanjazeli@gmail.com',
 			iconVariant: 'email',

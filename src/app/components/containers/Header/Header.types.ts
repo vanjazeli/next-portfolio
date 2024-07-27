@@ -14,6 +14,10 @@ export type HeaderContentT = {
 		};
 		position: string;
 		description: string;
+		additionalInfo: {
+			iconVariant: IconVariantsT;
+			text: string;
+		}[];
 	};
 	bottomLinks: {
 		url: string;
