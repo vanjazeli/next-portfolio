@@ -1,3 +1,5 @@
+import { ArrowLinkVariantT } from '../../ui/ArrowLink/ArrowLink.types';
+
 export type MultipleParagraphsContentT = {
 	heading: string;
 	paragraphs: {
@@ -7,5 +9,6 @@ export type MultipleParagraphsContentT = {
 		url: string;
 		text: string;
 		target: string;
+		variant?: ArrowLinkVariantT;
 	};
 };
