@@ -22,7 +22,7 @@ export default function Header({ content }: HeaderProps) {
 					)}
 					{headingLink && (
 						<h1 className="mb-3 text text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">
-							<Link className="hover:text-blue-500 transition-colors" href={headingLink.url}>
+							<Link className="hover:text-teal-300 transition-colors" href={headingLink.url}>
 								{headingLink.text}
 							</Link>
 						</h1>
@@ -45,7 +45,7 @@ export default function Header({ content }: HeaderProps) {
 				<ul className="flex gap-4 text-slate-400">
 					{bottomLinks.map((bottomLink, index) => (
 						<li className="w-8" key={index}>
-							<Link className="hover:text-blue-500 transition-colors" href={bottomLink.url} target={bottomLink.target}>
+							<Link className="hover:text-teal-300 transition-colors" href={bottomLink.url} target={bottomLink.target}>
 								<Icon variant={bottomLink.iconVariant} />
 							</Link>
 						</li>
