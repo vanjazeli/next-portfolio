@@ -16,7 +16,7 @@ export default function Header({ content }: HeaderProps) {
 			{topInfo && (
 				<div>
 					{image && (
-						<div className="mb-6 w-52 h-52 rounded-full overflow-hidden">
+						<div className="mb-3 inline-block rounded-full overflow-hidden">
 							<Image src={image.url} alt={image.alt} height={image.height} width={image.width} priority />
 						</div>
 					)}

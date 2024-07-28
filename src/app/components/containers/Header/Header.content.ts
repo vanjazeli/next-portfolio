@@ -5,8 +5,8 @@ export const content: HeaderContentT = {
 		image: {
 			url: '/vanja-zeli.png',
 			alt: "Photo of a very cool front-end developer. Of course it's me. :)",
-			width: 208,
-			height: 208,
+			width: 160,
+			height: 160,
 		},
 		headingLink: {
 			url: '/',
