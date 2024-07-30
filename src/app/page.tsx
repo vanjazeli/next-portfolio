@@ -1,7 +1,7 @@
 import Header from './components/containers/Header/Header';
 import { content as headerContent } from './components/containers/Header/Header.content';
 import MultipleParagraphs from './components/containers/MultipleParagraphs/MultipleParagraphs';
-import { summaryContent } from './components/containers/MultipleParagraphs/MultipleParagraphs.content';
+import { summaryContent, clientsAndProjectsContent } from './components/containers/MultipleParagraphs/MultipleParagraphs.content';
 import Spacer from './components/ui/Spacer/Spacer';
 
 export default function Home() {
@@ -16,6 +16,7 @@ export default function Home() {
 						<main className="lg:py-16">
 							<MultipleParagraphs content={summaryContent} />
 							<Spacer />
+							<MultipleParagraphs content={clientsAndProjectsContent} />
 						</main>
 					</div>
 				</div>

@@ -17,3 +17,12 @@ export const summaryContent: MultipleParagraphsContentT = {
 		variant: 'underline',
 	},
 };
+
+export const clientsAndProjectsContent: MultipleParagraphsContentT = {
+	heading: 'Clients & Projects',
+	paragraphs: [
+		{
+			text: 'Successfully contributed with CSS, JavaScript and React to 5+ both collaborative and individual projects for 5+ clients from countries like UK, France, Germany, Singapore, Netherlands etc. Collaborated with industries specializing in shipping, real estate, e-commerce, clothing etc.',
+		},
+	],
+};
