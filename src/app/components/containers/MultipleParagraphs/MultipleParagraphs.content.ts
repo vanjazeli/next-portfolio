@@ -1,6 +1,6 @@
 import { MultipleParagraphsContentT } from './MultipleParagraphs.types';
 
-export const content: MultipleParagraphsContentT = {
+export const summaryContent: MultipleParagraphsContentT = {
 	heading: 'Brief Summary',
 	paragraphs: [
 		{

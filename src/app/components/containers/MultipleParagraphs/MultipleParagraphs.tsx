@@ -7,7 +7,6 @@ type MultipleParagraphsProps = {
 
 export default function MultipleParagraphs({ content }: MultipleParagraphsProps) {
 	const { heading, paragraphs, link } = content;
-	const { url, text, target, variant } = link;
 
 	return (
 		<section>
@@ -19,7 +18,7 @@ export default function MultipleParagraphs({ content }: MultipleParagraphsProps)
 					))}
 				</div>
 			)}
-			{link && <ArrowLink className="mt-16" href={url} text={text} target={target} variant={variant} />}
+			{link && <ArrowLink className="mt-16" href={link.url} text={link.text} target={link.target} variant={link.variant} />}
 		</section>
 	);
 }
