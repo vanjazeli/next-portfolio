@@ -3,6 +3,7 @@ import { content as headerContent } from './components/containers/Header/Header.
 import MultipleParagraphs from './components/containers/MultipleParagraphs/MultipleParagraphs';
 import { summaryContent, clientsAndProjectsContent } from './components/containers/MultipleParagraphs/MultipleParagraphs.content';
 import Spacer from './components/ui/Spacer/Spacer';
+import CardLinks from './components/containers/CardLinks/CardLinks';
 
 export default function Home() {
 	return (
@@ -17,6 +18,8 @@ export default function Home() {
 							<MultipleParagraphs content={summaryContent} />
 							<Spacer />
 							<MultipleParagraphs content={clientsAndProjectsContent} />
+							<Spacer isSmall />
+							<CardLinks />
 						</main>
 					</div>
 				</div>

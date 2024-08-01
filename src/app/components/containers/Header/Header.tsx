@@ -12,9 +12,9 @@ export default function Header({ content }: HeaderProps) {
 	const { image, headingLink, position, description, additionalInfo } = topInfo;
 
 	return (
-		<header className="h-full lg:flex lg:flex-col lg:justify-between lg:py-16 lg:sticky lg:top-0 lg:max-h-dvh">
+		<header className="py-20 lg:py-16 md:mb-20 lg:mb-0 lg:h-full lg:flex lg:flex-col lg:justify-between lg:sticky lg:top-0 lg:max-h-dvh">
 			{topInfo && (
-				<div>
+				<div className="flex flex-col items-center lg:items-start lg:flex-none">
 					{image && (
 						<div className="mb-3 inline-block rounded-full overflow-hidden">
 							<Image src={image.url} alt={image.alt} height={image.height} width={image.width} priority />
@@ -28,9 +28,9 @@ export default function Header({ content }: HeaderProps) {
 						</h1>
 					)}
 					{position && <h2 className="mb-4 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">{position}</h2>}
-					{description && <p className="mb-4 max-w-xs text-slate-400" dangerouslySetInnerHTML={{ __html: description }} />}
+					{description && <p className="text-center lg:text-left mb-4 max-w-xs text-slate-400" dangerouslySetInnerHTML={{ __html: description }} />}
 					{additionalInfo && (
-						<ul className="flex flex-col gap-1">
+						<ul className="mb-4 flex flex-col gap-1">
 							{additionalInfo.map(({ iconVariant, text }, index) => (
 								<li className="flex align-center gap-2 text-slate-400" key={index}>
 									<Icon className="w-4" variant={iconVariant} />
@@ -42,7 +42,7 @@ export default function Header({ content }: HeaderProps) {
 				</div>
 			)}
 			{bottomLinks && (
-				<ul className="flex gap-4 text-slate-400">
+				<ul className="flex justify-center lg:justify-start gap-4 text-slate-400">
 					{bottomLinks.map((bottomLink, index) => (
 						<li className="w-8" key={index}>
 							<Link className="hover:text-teal-300 transition-colors" href={bottomLink.url} target={bottomLink.target}>
