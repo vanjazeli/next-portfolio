@@ -20,6 +20,7 @@ export default function Home() {
 							<MultipleParagraphs content={clientsAndProjectsContent} />
 							<Spacer isSmall />
 							<CardLinks />
+							<Spacer />
 						</main>
 					</div>
 				</div>
