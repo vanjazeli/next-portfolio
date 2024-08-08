@@ -16,7 +16,7 @@ export default function Home() {
 					<div className="lg:w-3/5">
 						<main className="lg:py-16">
 							<MultipleParagraphs content={summaryContent} />
-							<Spacer />
+							<Spacer isSmall />
 							<MultipleParagraphs content={clientsAndProjectsContent} />
 							<Spacer isSmall />
 							<CardLinks />
