@@ -4,6 +4,7 @@ import MultipleParagraphs from './components/containers/MultipleParagraphs/Multi
 import { summaryContent, clientsAndProjectsContent } from './components/containers/MultipleParagraphs/MultipleParagraphs.content';
 import Spacer from './components/ui/Spacer/Spacer';
 import CardLinks from './components/containers/CardLinks/CardLinks';
+import ExternalLink from './components/ui/ExternalLink/ExternalLink';
 
 export default function Home() {
 	return (
@@ -20,6 +21,7 @@ export default function Home() {
 							<MultipleParagraphs content={clientsAndProjectsContent} />
 							<Spacer isSmall />
 							<CardLinks />
+							<ExternalLink href="/" text="Github" target="" />
 						</main>
 					</div>
 				</div>
