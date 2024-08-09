@@ -17,11 +17,10 @@ export default function Home() {
 					<div className="lg:w-3/5">
 						<main className="lg:py-[14vh]">
 							<MultipleParagraphs content={summaryContent} />
-							<Spacer isSmall />
+							<Spacer />
 							<MultipleParagraphs content={clientsAndProjectsContent} />
 							<Spacer isSmall />
 							<CardLinks />
-							<ExternalLink href="/" text="Github" target="" />
 						</main>
 					</div>
 				</div>

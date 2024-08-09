@@ -14,7 +14,7 @@ type ArrowLinkProps = {
 export default function ArrowLink({ href, text, target, variant = 'regular', className }: ArrowLinkProps) {
 	if (variant === 'regular') {
 		return (
-			<Link className={classNames('group flex align-center gap-1 text-slate-200 hover:text-teal-300 transition-colors w-fit', className)} href={href} target={target}>
+			<Link className={classNames('group flex align-center gap-1 text-slate-200 group-hover:text-teal-300 hover:text-teal-300 transition-colors w-fit', className)} href={href} target={target}>
 				<span className="font-bold">{text}</span>
 				<Icon className="w-4 group-hover:rotate-45 transition-transform" variant="arrow-top-right" />
 			</Link>

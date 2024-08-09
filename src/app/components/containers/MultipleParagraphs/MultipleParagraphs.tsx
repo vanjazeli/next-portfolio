@@ -18,7 +18,7 @@ export default function MultipleParagraphs({ content }: MultipleParagraphsProps)
 					))}
 				</div>
 			)}
-			{link && <ArrowLink className="mt-10 lg:mt-16" href={link.url} text={link.text} target={link.target} variant={link.variant} />}
+			{link && <ArrowLink className="mt-10 lg:mt-8" href={link.url} text={link.text} target={link.target} variant={link.variant} />}
 		</section>
 	);
 }

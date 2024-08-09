@@ -9,9 +9,9 @@ type ExternalLinkProps = {
 
 export default function ExternalLink({ href, text, target }: ExternalLinkProps) {
 	return (
-		<Link className="flex align-center gap-1 text-slate-200 hover:text-teal-300 w-fit" href={href} target={target}>
+		<Link className="flex align-center gap-1 text-slate-200 hover:text-teal-300 w-fit transition-colors" href={href} target={target}>
 			<Icon className="w-4" variant="external-link" />
-			<span className="text-sm">{text}</span>
+			<span className="font-bold">{text}</span>
 		</Link>
 	);
 }
