@@ -1,1 +1,1 @@
-export type IconVariantsT = 'linkedin' | 'github' | 'phone' | 'email' | 'location' | 'job' | 'education' | 'arrow-top-right' | 'arrow-right';
+export type IconVariantsT = 'linkedin' | 'github' | 'phone' | 'email' | 'location' | 'job' | 'education' | 'arrow-top-right' | 'arrow-right' | 'external-link';
