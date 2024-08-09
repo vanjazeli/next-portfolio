@@ -14,13 +14,12 @@ export default function Home() {
 						<Header content={headerContent} />
 					</div>
 					<div className="lg:w-3/5">
-						<main className="lg:py-16">
+						<main className="lg:py-[14vh]">
 							<MultipleParagraphs content={summaryContent} />
 							<Spacer isSmall />
 							<MultipleParagraphs content={clientsAndProjectsContent} />
 							<Spacer isSmall />
 							<CardLinks />
-							<Spacer />
 						</main>
 					</div>
 				</div>
