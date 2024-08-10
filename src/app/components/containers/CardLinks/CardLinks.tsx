@@ -18,7 +18,9 @@ export default function CardLinks({ content }: CardLinksProps) {
 					return (
 						<li key={index}>
 							<div className="group isolate flex gap-4 lg:p-4 relative before:absolute before:top-0 before:left-0 before:right-0 before:-z-10 before:bottom-0 before:bg-white before:rounded-md before:opacity-0 before:transition-opacity hover:before:opacity-5">
-								<div className="w-1/4">{item.image && <Image className="border border-slate-800 rounded-md overflow-hidden transition-colors group-hover:border-teal-300" src={item.image.url} alt={item.image.alt} width={item.image.width} height={item.image.height} />}</div>
+								<div className="w-1/4">
+									<div className="aspect-video relative border border-slate-800 rounded-md overflow-hidden transition-colors group-hover:border-teal-300">{item.image && <Image className="absolute top-0 left-0 w-full h-full object-cover" src={item.image.url} alt={item.image.alt} width={item.image.width} height={item.image.height} />}</div>
+								</div>
 								<div className="w-3/4">
 									{item.link && <ArrowLink className="mb-1" href={item.link.href} variant="regular" text={item.link.text} target={item.link.target} />}
 									{item.description && <p className="text-slate-400 mb-3">{item.description}</p>}
@@ -76,9 +78,6 @@ export default function CardLinks({ content }: CardLinksProps) {
 						</li>
 					);
 			})}
-			<li className="flex justify-center">
-				<p className="text-slate-400">And many more...</p>
-			</li>
 		</ul>
 	);
 }
