@@ -4,7 +4,7 @@ export const projectLinksContent: CardLinksT = [
 	{
 		variant: 'clickable',
 		image: {
-			url: '/wunder-wasabi.png',
+			url: '/wunder-wasabi.jpg',
 			alt: 'Wunder and Wasabi - Crypto & NFT - Preview image',
 			width: 1920,
 			height: 1080,
@@ -32,7 +32,7 @@ export const projectLinksContent: CardLinksT = [
 	{
 		variant: 'clickable',
 		image: {
-			url: '/raiffeisen-bank-serbia.png',
+			url: '/raiffeisen-bank-serbia.jpg',
 			alt: 'Raiffeisen Bank - Serbia - Preview image',
 			width: 1920,
 			height: 1080,
@@ -134,5 +134,28 @@ export const playgroundContent: CardLinksT = [
 			},
 		],
 		additionalItems: ['Vite', 'JavaScript', 'GSAP', 'SCSS', 'CSS Animation'],
+	},
+	{
+		variant: 'clickable',
+		image: {
+			url: '/character-shuffle-effect.jpg',
+			alt: 'Character Shuffle Effect - Preview image',
+			width: 1920,
+			height: 1080,
+		},
+		link: {
+			href: 'https://vanjazeli.github.io/character-shuffle-hover-effect/',
+			text: 'Character Shuffle Effect - Demo',
+			target: '_blank',
+		},
+		description: 'A cool hover effect that shuffles the characters of a hovered element in a fun way creating a playful animation.',
+		externalLinks: [
+			{
+				href: 'https://github.com/vanjazeli/character-shuffle-hover-effect',
+				text: 'Github Repo',
+				target: '_blank',
+			},
+		],
+		additionalItems: ['JavaScript'],
 	},
 ];

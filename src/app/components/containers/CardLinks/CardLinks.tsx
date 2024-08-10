@@ -19,7 +19,7 @@ export default function CardLinks({ content }: CardLinksProps) {
 						<li key={index}>
 							<div className="group isolate flex gap-4 lg:p-4 relative before:absolute before:top-0 before:left-0 before:right-0 before:-z-10 before:bottom-0 before:bg-white before:rounded-md before:opacity-0 before:transition-opacity hover:before:opacity-5">
 								<div className="w-1/4">
-									<div className="aspect-video relative border border-slate-800 rounded-md overflow-hidden transition-colors group-hover:border-teal-300">{item.image && <Image className="absolute top-0 left-0 w-full h-full object-cover" src={item.image.url} alt={item.image.alt} width={item.image.width} height={item.image.height} />}</div>
+									<div className="aspect-square relative border border-slate-800 rounded-md overflow-hidden transition-colors group-hover:border-teal-300">{item.image && <Image className="absolute top-0 left-0 w-full h-full object-cover" src={item.image.url} alt={item.image.alt} width={item.image.width} height={item.image.height} />}</div>
 								</div>
 								<div className="w-3/4">
 									{item.link && <ArrowLink className="mb-1" href={item.link.href} variant="regular" text={item.link.text} target={item.link.target} />}
@@ -50,7 +50,7 @@ export default function CardLinks({ content }: CardLinksProps) {
 						<li key={index}>
 							<div className="flex gap-4 lg:p-4">
 								<div className="w-1/4">
-									<div className="border border-teal-300 rounded-md aspect-video flex justify-center items-center">
+									<div className="border border-teal-300 rounded-md aspect-square flex justify-center items-center">
 										<span className="text-4xl font-bold text-teal-300">NDA</span>
 									</div>
 								</div>
@@ -59,7 +59,7 @@ export default function CardLinks({ content }: CardLinksProps) {
 									{item.description && <p className="text-slate-400 mb-3">{item.description}</p>}
 									{item.location && (
 										<div className="flex align-center gap-2 text-slate-200 mb-3">
-											<Icon className="w-4" variant="location" />
+											<Icon className="w-4 text-slate-400" variant="location" />
 											<span className="font-bold">Client location:</span>
 											<span>{item.location}</span>
 										</div>
