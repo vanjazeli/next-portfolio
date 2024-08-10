@@ -9,6 +9,9 @@ export const summaryContent: MultipleParagraphsContentT = {
 		{
 			text: 'Eager to <span class="font-bold text-slate-200">contribute while expanding my knowledge</span> of coding beyond the boundaries of comfort zone.',
 		},
+		{
+			text: 'Feel free to browse through my résumé to find out more about me.',
+		},
 	],
 	link: {
 		url: 'https://vanjazeli.github.io/resume/',
@@ -23,6 +26,18 @@ export const clientsAndProjectsContent: MultipleParagraphsContentT = {
 	paragraphs: [
 		{
 			text: 'Successfully contributed with CSS, JavaScript and React to 5+ both collaborative and individual projects for 5+ clients from countries like UK, France, Germany, Singapore, Netherlands etc. Collaborated with industries specializing in shipping, real estate, e-commerce, clothing etc.',
+		},
+	],
+};
+
+export const miniLibrariesContent: MultipleParagraphsContentT = {
+	heading: 'Wonders from My Code Playground',
+	paragraphs: [
+		{
+			text: 'Dive into my collection of quirky and charming UI libraries. These mini marvels are my way of turning coding into a playground, where I’ve crafted everything from sleek effects and snazzy animations to some other types of fun projects.',
+		},
+		{
+			text: 'Enjoy the fun and feel free to borrow a sprinkle of inspiration for your own projects!',
 		},
 	],
 };

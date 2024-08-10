@@ -1,9 +1,9 @@
 import Header from './components/containers/Header/Header';
 import { content as headerContent } from './components/containers/Header/Header.content';
 import MultipleParagraphs from './components/containers/MultipleParagraphs/MultipleParagraphs';
-import { summaryContent, clientsAndProjectsContent } from './components/containers/MultipleParagraphs/MultipleParagraphs.content';
+import { summaryContent, clientsAndProjectsContent, miniLibrariesContent } from './components/containers/MultipleParagraphs/MultipleParagraphs.content';
 import CardLinks from './components/containers/CardLinks/CardLinks';
-import { projectLinksContent } from './components/containers/CardLinks/CardLinks.content';
+import { projectLinksContent, playgroundContent } from './components/containers/CardLinks/CardLinks.content';
 import Spacer from './components/ui/Spacer/Spacer';
 
 export default function Home() {
@@ -21,6 +21,10 @@ export default function Home() {
 							<MultipleParagraphs content={clientsAndProjectsContent} />
 							<Spacer isSmall />
 							<CardLinks content={projectLinksContent} />
+							<Spacer />
+							<MultipleParagraphs content={miniLibrariesContent} />
+							<Spacer isSmall />
+							<CardLinks content={playgroundContent} />
 						</main>
 					</div>
 				</div>
