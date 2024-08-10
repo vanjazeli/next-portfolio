@@ -1,27 +1,20 @@
+import { ImageT } from '@/app/types/Image.types';
 import { IconVariantsT } from '../../ui/Icon/Icon.types';
+import { IconLinkT } from '../../ui/Icon/Icon.types';
 
 export type HeaderContentT = {
 	topInfo: {
-		image: {
-			url: string;
-			alt: string;
-			width: number;
-			height: number;
-		};
+		image: ImageT;
 		headingLink: {
 			url: string;
 			text: string;
 		};
 		position: string;
 		description: string;
-		additionalInfo: {
+		additionalInfo: Array<{
 			iconVariant: IconVariantsT;
 			text: string;
-		}[];
+		}>;
 	};
-	bottomLinks: {
-		url: string;
-		iconVariant: IconVariantsT;
-		target: string;
-	}[];
+	bottomLinks: Array<IconLinkT>;
 };
