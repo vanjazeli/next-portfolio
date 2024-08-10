@@ -1,11 +1,8 @@
 import Link from 'next/link';
 import Icon from '../Icon/Icon';
+import { LinkT } from '@/app/types/Link.types';
 
-type ExternalLinkProps = {
-	href: string;
-	text: string;
-	target: string;
-};
+type ExternalLinkProps = LinkT;
 
 export default function ExternalLink({ href, text, target }: ExternalLinkProps) {
 	return (

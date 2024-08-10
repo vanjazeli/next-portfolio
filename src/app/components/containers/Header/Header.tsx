@@ -4,10 +4,12 @@ import Icon from '../../ui/Icon/Icon';
 import { HeaderContentT } from './Header.types';
 
 type HeaderProps = {
-	content: HeaderContentT;
+	content?: HeaderContentT;
 };
 
 export default function Header({ content }: HeaderProps) {
+	if (!content) return null;
+
 	const { topInfo, bottomLinks } = content;
 	const { image, headingLink, position, description, additionalInfo } = topInfo;
 

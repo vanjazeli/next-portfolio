@@ -2,10 +2,12 @@ import type { MultipleParagraphsContentT } from './MultipleParagraphs.types';
 import ArrowLink from '../../ui/ArrowLink/ArrowLink';
 
 type MultipleParagraphsProps = {
-	content: MultipleParagraphsContentT;
+	content?: MultipleParagraphsContentT;
 };
 
 export default function MultipleParagraphs({ content }: MultipleParagraphsProps) {
+	if (!content) return null;
+
 	const { heading, paragraphs, link } = content;
 
 	return (
