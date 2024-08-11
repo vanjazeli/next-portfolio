@@ -1,0 +1,15 @@
+export const styles = {
+	header: 'py-10 lg:py-16 md:mb-20 lg:mb-0 lg:h-full lg:flex lg:flex-col lg:justify-between lg:sticky lg:top-0 lg:max-h-dvh',
+	topInfo: 'flex flex-col items-start lg:flex-none',
+	imageWrap: 'mb-5 lg:mb-3 inline-block rounded-full overflow-hidden',
+	heading: 'mb-3 text text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl',
+	headingLink: 'hover:text-teal-300 transition-colors',
+	position: 'mb-4 text-lg font-medium tracking-tight text-slate-200 sm:text-xl',
+	description: 'mb-4 lg:max-w-xs text-slate-400',
+	additionalList: 'mb-6 flex flex-col gap-1',
+	item: 'flex align-center gap-2 text-slate-400',
+	additionalIcon: 'w-4',
+	bottomList: 'flex gap-4 text-slate-400',
+	bottomItem: 'w-8',
+	bottomLink: 'hover:text-teal-300 transition-colors',
+};

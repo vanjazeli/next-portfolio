@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Icon from '../../ui/Icon/Icon';
 import { HeaderContentT } from './Header.types';
+import { styles } from './Header.styles';
 
 type HeaderProps = {
 	content?: HeaderContentT;
@@ -14,28 +15,28 @@ export default function Header({ content }: HeaderProps) {
 	const { image, headingLink, position, description, additionalInfo } = topInfo;
 
 	return (
-		<header className="py-10 lg:py-16 md:mb-20 lg:mb-0 lg:h-full lg:flex lg:flex-col lg:justify-between lg:sticky lg:top-0 lg:max-h-dvh">
+		<header className={styles.header}>
 			{topInfo && (
-				<div className="flex flex-col items-start lg:flex-none">
+				<div className={styles.topInfo}>
 					{image && (
-						<div className="mb-5 lg:mb-3 inline-block rounded-full overflow-hidden">
+						<div className={styles.imageWrap}>
 							<Image src={image.url} alt={image.alt} height={image.height} width={image.width} priority />
 						</div>
 					)}
 					{headingLink && (
-						<h1 className="mb-3 text text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">
-							<Link className="hover:text-teal-300 transition-colors" href={headingLink.url}>
+						<h1 className={styles.heading}>
+							<Link className={styles.headingLink} href={headingLink.url}>
 								{headingLink.text}
 							</Link>
 						</h1>
 					)}
-					{position && <h2 className="mb-4 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">{position}</h2>}
-					{description && <p className="mb-4 lg:max-w-xs text-slate-400" dangerouslySetInnerHTML={{ __html: description }} />}
+					{position && <h2 className={styles.position}>{position}</h2>}
+					{description && <p className={styles.description} dangerouslySetInnerHTML={{ __html: description }} />}
 					{additionalInfo && (
-						<ul className="mb-6 flex flex-col gap-1">
+						<ul className={styles.additionalList}>
 							{additionalInfo.map(({ iconVariant, text }, index) => (
-								<li className="flex align-center gap-2 text-slate-400" key={index}>
-									<Icon className="w-4" variant={iconVariant} />
+								<li className={styles.item} key={index}>
+									<Icon className={styles.additionalIcon} variant={iconVariant} />
 									<span>{text}</span>
 								</li>
 							))}
@@ -44,10 +45,10 @@ export default function Header({ content }: HeaderProps) {
 				</div>
 			)}
 			{bottomLinks && (
-				<ul className="flex gap-4 text-slate-400">
+				<ul className={styles.bottomList}>
 					{bottomLinks.map((bottomLink, index) => (
-						<li className="w-8" key={index}>
-							<Link className="hover:text-teal-300 transition-colors" href={bottomLink.url} target={bottomLink.target}>
+						<li className={styles.bottomItem} key={index}>
+							<Link className={styles.bottomLink} href={bottomLink.url} target={bottomLink.target}>
 								<Icon variant={bottomLink.iconVariant} />
 							</Link>
 						</li>
