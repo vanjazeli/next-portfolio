@@ -2,10 +2,10 @@ import Image from 'next/image';
 import ArrowLink from '../../ui/ArrowLink/ArrowLink';
 import ExternalLink from '../../ui/ExternalLink/ExternalLink';
 import Icon from '../../ui/Icon/Icon';
-import { CardLinksT } from './CardLinks.types';
+import { CardLinksContentT } from './CardLinks.types';
 
 type CardLinksProps = {
-	content?: CardLinksT;
+	content?: CardLinksContentT;
 };
 
 export default function CardLinks({ content }: CardLinksProps) {

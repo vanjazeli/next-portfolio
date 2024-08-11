@@ -18,4 +18,4 @@ export type NonClickableCardT = {
 	additionalItems: Array<string>;
 };
 
-export type CardLinksT = Array<ClickableCardT | NonClickableCardT>;
+export type CardLinksContentT = Array<ClickableCardT | NonClickableCardT>;

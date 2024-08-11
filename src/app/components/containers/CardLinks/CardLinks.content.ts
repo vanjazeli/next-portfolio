@@ -1,6 +1,6 @@
-import { CardLinksT } from './CardLinks.types';
+import { CardLinksContentT } from './CardLinks.types';
 
-export const projectLinksContent: CardLinksT = [
+export const projectLinksContent: CardLinksContentT = [
 	{
 		variant: 'clickable',
 		image: {
@@ -73,7 +73,7 @@ export const projectLinksContent: CardLinksT = [
 	},
 ];
 
-export const playgroundContent: CardLinksT = [
+export const playgroundContent: CardLinksContentT = [
 	{
 		variant: 'clickable',
 		image: {
