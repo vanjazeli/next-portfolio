@@ -27,7 +27,7 @@ export const projectLinksContent: CardLinksContentT = [
 				target: '_blank',
 			},
 		],
-		additionalItems: ['JavaScript', 'GSAP', 'SCSS', 'Scrolling Animation'],
+		additionalItems: ['JavaScript', 'GSAP', 'SCSS', 'Pixel Perfect', 'Scrolling Animation'],
 	},
 	{
 		variant: 'clickable',
@@ -55,7 +55,7 @@ export const projectLinksContent: CardLinksContentT = [
 				target: '_blank',
 			},
 		],
-		additionalItems: ['JavaScript', 'GSAP', 'SCSS', 'Parallax Animation'],
+		additionalItems: ['JavaScript', 'GSAP', 'SCSS', 'Pixel Perfect', 'Parallax Animation'],
 	},
 	{
 		variant: 'nonClickable',
@@ -69,7 +69,7 @@ export const projectLinksContent: CardLinksContentT = [
 		heading: 'World-Renowned Clothing Brand Website',
 		description: 'A project created for a world-renowned clothing brand, featuring an intricate design and numerous animations. The project was used as a sponsorship platform during a global sporting event, amplifying brand presence and audience interaction.',
 		location: 'The Netherlands',
-		additionalItems: ['Next.js', 'TypeScript', 'Atomic Design', 'SCSS', 'GSAP', 'Storybook'],
+		additionalItems: ['Next.js', 'TypeScript', 'Atomic Design', 'SCSS', 'Pixel Perfect', 'GSAP', 'Storybook'],
 	},
 ];
 

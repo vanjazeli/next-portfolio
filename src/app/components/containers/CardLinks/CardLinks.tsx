@@ -20,7 +20,7 @@ export default function CardLinks({ content }: CardLinksProps) {
 						<li key={index}>
 							<div className={styles.clickableWrap}>
 								<div className={styles.imageHolder}>
-									<div className={styles.imageWrap}>{item.image && <Image className={styles.image} src={item.image.url} alt={item.image.alt} width={item.image.width} height={item.image.height} />}</div>
+									<div className={styles.imageWrap}>{item.image && <Image className={styles.image} src={item.image.url} alt={item.image.alt} width={item.image.width} height={item.image.height} priority />}</div>
 								</div>
 								<div className={styles.textContainer}>
 									{item.link && <ArrowLink className={styles.link} href={item.link.href} variant="regular" text={item.link.text} target={item.link.target} />}
