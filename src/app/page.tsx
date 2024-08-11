@@ -5,17 +5,18 @@ import { summaryContent, clientsAndProjectsContent, miniLibrariesContent } from 
 import CardLinks from './components/containers/CardLinks/CardLinks';
 import { projectLinksContent, playgroundContent } from './components/containers/CardLinks/CardLinks.content';
 import Spacer from './components/ui/Spacer/Spacer';
+import { styles } from './page.styles';
 
 export default function Home() {
 	return (
-		<div className="bg-slate-900 text-slate-200 leading-relaxed font-inter selection:bg-teal-300 selection:text-teal-900">
-			<div className="container px-6 mx-auto lg:px-40">
-				<div className="lg:w-full lg:flex lg:gap-5 oultine-1 min-h-dvh">
-					<div className="lg:w-2/5">
+		<div className={styles.pageWrap}>
+			<div className={styles.container}>
+				<div className={styles.contentWrap}>
+					<div className={styles.sidebar}>
 						<Header content={headerContent} />
 					</div>
-					<div className="lg:w-3/5">
-						<main className="lg:py-[14vh]">
+					<div className={styles.mainContent}>
+						<main className={styles.mainSection}>
 							<MultipleParagraphs content={summaryContent} />
 							<Spacer />
 							<MultipleParagraphs content={clientsAndProjectsContent} />
