@@ -1,5 +1,5 @@
 import { LinkT } from '@/types/Link.types';
-import { ImageT } from '@/app/types/Image.types';
+import { ImageT } from '@/types/Image.types';
 
 export type ClickableCardT = {
 	variant: 'clickable';

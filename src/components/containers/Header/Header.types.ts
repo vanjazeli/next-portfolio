@@ -1,4 +1,4 @@
-import { ImageT } from '@/app/types/Image.types';
+import { ImageT } from '@/types/Image.types';
 import { IconVariantsT } from '../../ui/Icon/Icon.types';
 import { IconLinkT } from '../../ui/Icon/Icon.types';
 
