@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Icon from '../../ui/Icon/Icon';
 import { HeaderContentT } from './Header.types';
 import { styles } from './Header.styles';
+import { removeScriptTags } from '@/utilities/removeScriptTags';
 
 type HeaderProps = {
 	content?: HeaderContentT;
@@ -31,7 +32,7 @@ export default function Header({ content }: HeaderProps) {
 						</h1>
 					)}
 					{position && <h2 className={styles.position}>{position}</h2>}
-					{description && <p className={styles.description} dangerouslySetInnerHTML={{ __html: description }} />}
+					{description && <p className={styles.description} dangerouslySetInnerHTML={{ __html: removeScriptTags(description) }} />}
 					{additionalInfo && (
 						<ul className={styles.additionalList}>
 							{additionalInfo.map(({ iconVariant, text }, index) => (
