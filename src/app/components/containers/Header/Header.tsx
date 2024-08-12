@@ -20,7 +20,7 @@ export default function Header({ content }: HeaderProps) {
 				<div className={styles.topInfo}>
 					{image && (
 						<div className={styles.imageWrap}>
-							<Image src={image.url} alt={image.alt} height={image.height} width={image.width} priority />
+							<Image className={styles.image} src={image.url} alt={image.alt} height={image.height} width={image.width} priority />
 						</div>
 					)}
 					{headingLink && (
