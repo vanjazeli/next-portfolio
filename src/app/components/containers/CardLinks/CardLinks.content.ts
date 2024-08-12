@@ -4,7 +4,7 @@ export const projectLinksContent: CardLinksContentT = [
 	{
 		variant: 'clickable',
 		image: {
-			url: '/wunder-wasabi.jpg',
+			url: '/images/wunder-wasabi.jpg',
 			alt: 'Wunder and Wasabi - Crypto & NFT - Preview image',
 			width: 1920,
 			height: 1080,
@@ -32,7 +32,7 @@ export const projectLinksContent: CardLinksContentT = [
 	{
 		variant: 'clickable',
 		image: {
-			url: '/raiffeisen-bank-serbia.jpg',
+			url: '/images/raiffeisen-bank-serbia.jpg',
 			alt: 'Raiffeisen Bank - Serbia - Preview image',
 			width: 1920,
 			height: 1080,
@@ -77,7 +77,7 @@ export const playgroundContent: CardLinksContentT = [
 	{
 		variant: 'clickable',
 		image: {
-			url: '/image-reveal-animations.png',
+			url: '/images/image-reveal-animations.png',
 			alt: 'Image Reveal Animations - Preview image',
 			width: 1920,
 			height: 1080,
@@ -110,7 +110,7 @@ export const playgroundContent: CardLinksContentT = [
 	{
 		variant: 'clickable',
 		image: {
-			url: '/fading-backgrounds-1.jpg',
+			url: '/images/fading-backgrounds.jpg',
 			alt: 'testing alt',
 			width: 1920,
 			height: 1080,
@@ -138,7 +138,7 @@ export const playgroundContent: CardLinksContentT = [
 	{
 		variant: 'clickable',
 		image: {
-			url: '/character-shuffle-effect.jpg',
+			url: '/images/character-shuffle-effect.jpg',
 			alt: 'Character Shuffle Effect - Preview image',
 			width: 1920,
 			height: 1080,

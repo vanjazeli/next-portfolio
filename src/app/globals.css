@@ -1,14 +1,12 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@400;700&family=Source+Code+Pro&display=swap'); */
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @font-face {
   font-family: 'Inter';
-  src: url('/Inter18pt-Bold.woff2') format('woff2'),
-    url('/Inter18pt-Bold.woff') format('woff'),
-    url('/Inter18pt-Bold.ttf') format('truetype');
+  src: url('/fonts/InterBold.woff2') format('woff2'),
+    url('/fonts/InterBold.woff') format('woff'),
+    url('/fonts/InterBold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -16,9 +14,9 @@
 
 @font-face {
   font-family: 'Inter';
-  src: url('/Inter18pt-Regular.woff2') format('woff2'),
-    url('/Inter18pt-Regular.woff') format('woff'),
-    url('/Inter18pt-Regular.ttf') format('truetype');
+  src: url('/fonts/InterRegular.woff2') format('woff2'),
+    url('/fonts/InterRegular.woff') format('woff'),
+    url('/fonts/InterRegular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;

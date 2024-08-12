@@ -3,7 +3,7 @@ import type { HeaderContentT } from './Header.types';
 export const content: HeaderContentT = {
 	topInfo: {
 		image: {
-			url: '/vanja-zeli.png',
+			url: '/images/portrait.png',
 			alt: "Photo of a very cool front-end developer. Of course it's me. :)",
 			width: 160,
 			height: 160,
