@@ -19,6 +19,7 @@ export default function CardLinks({ content }: CardLinksProps) {
 					return (
 						<li key={index}>
 							<div className={styles.clickableWrap}>
+								<div className={styles.overlay}></div>
 								<div className={styles.imageHolder}>
 									<div className={styles.imageWrap}>{item.image && <Image className={styles.image} src={item.image.url} alt={item.image.alt} width={item.image.width} height={item.image.height} priority />}</div>
 								</div>
@@ -61,8 +62,10 @@ export default function CardLinks({ content }: CardLinksProps) {
 									{item.location && (
 										<div className={styles.locationWrap}>
 											<Icon className={styles.locationIcon} variant="location" />
-											<span className={styles.locationText}>Client location:</span>
-											<span>{item.location}</span>
+											<span className={styles.locationTextWrap}>
+												<span className={styles.locationDescription}>Client location:</span>
+												<span className={styles.locationText}>{item.location}</span>
+											</span>
 										</div>
 									)}
 									{item.additionalItems && (
