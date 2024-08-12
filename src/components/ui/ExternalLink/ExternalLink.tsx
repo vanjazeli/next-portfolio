@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Icon from '../Icon/Icon';
-import { LinkT } from '@/app/types/Link.types';
+import { LinkT } from '@/types/Link.types';
 import { styles } from './ExternalLink.styles';
 
 type ExternalLinkProps = LinkT;

@@ -1,5 +1,5 @@
 import { ArrowLinkVariantT } from '../../ui/ArrowLink/ArrowLink.types';
-import { LinkT } from '@/app/types/Link.types';
+import { LinkT } from '@/types/Link.types';
 
 export type ArrowLinkT = LinkT & {
 	variant?: ArrowLinkVariantT;

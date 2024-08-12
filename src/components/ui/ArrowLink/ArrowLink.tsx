@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Icon from '../Icon/Icon';
 import classNames from 'classnames';
 import type { ArrowLinkVariantT } from './ArrowLink.types';
-import type { LinkT } from '@/app/types/Link.types';
+import type { LinkT } from '@/types/Link.types';
 import { styles } from './ArrowLink.styles';
 
 type ArrowLinkProps = LinkT & {

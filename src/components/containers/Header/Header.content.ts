@@ -1,6 +1,6 @@
 import type { HeaderContentT } from './Header.types';
 
-export const content: HeaderContentT = {
+export const headerContent: HeaderContentT = {
 	topInfo: {
 		image: {
 			url: '/images/portrait.png',

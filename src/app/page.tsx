@@ -1,10 +1,10 @@
-import Header from './components/containers/Header/Header';
-import { content as headerContent } from './components/containers/Header/Header.content';
-import MultipleParagraphs from './components/containers/MultipleParagraphs/MultipleParagraphs';
-import { summaryContent, clientsAndProjectsContent, miniLibrariesContent } from './components/containers/MultipleParagraphs/MultipleParagraphs.content';
-import CardLinks from './components/containers/CardLinks/CardLinks';
-import { projectLinksContent, playgroundContent } from './components/containers/CardLinks/CardLinks.content';
-import Spacer from './components/ui/Spacer/Spacer';
+import Header from '@/components/containers/Header/Header';
+import { headerContent } from '@/components/containers/Header/Header.content';
+import MultipleParagraphs from '@/components/containers/MultipleParagraphs/MultipleParagraphs';
+import { summaryContent, clientsAndProjectsContent, miniLibrariesContent } from '@/components/containers/MultipleParagraphs/MultipleParagraphs.content';
+import CardLinks from '@/components/containers/CardLinks/CardLinks';
+import { projectLinksContent, playgroundContent } from '@/components/containers/CardLinks/CardLinks.content';
+import Spacer from '../components/ui/Spacer/Spacer';
 import { styles } from './page.styles';
 
 export default function Home() {
