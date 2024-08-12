@@ -21,7 +21,7 @@ export default function MultipleParagraphs({ content }: MultipleParagraphsProps)
 					))}
 				</div>
 			)}
-			{link && <ArrowLink className={styles.link} href={link.url} text={link.text} target={link.target} variant={link.variant} />}
+			{link && <ArrowLink href={link.url} text={link.text} target={link.target} variant={link.variant} />}
 		</section>
 	);
 }

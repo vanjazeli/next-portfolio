@@ -1,6 +1,5 @@
 export const styles = {
-	heading: 'text-3xl font-bold tracking-tight mb-4',
-	paragraphsContainer: 'flex flex-col gap-3',
+	heading: 'text-2xl md:text-3xl font-bold tracking-tight mb-4 last:mb-0',
+	paragraphsContainer: 'mb-8 flex flex-col gap-4 last:mb-0',
 	paragraph: 'text-slate-400',
-	link: 'mt-10 lg:mt-8',
 };

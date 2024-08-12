@@ -26,6 +26,7 @@ export default function Home() {
 							<MultipleParagraphs content={miniLibrariesContent} />
 							<Spacer isSmall />
 							<CardLinks content={playgroundContent} />
+							<Spacer />
 						</main>
 					</div>
 				</div>

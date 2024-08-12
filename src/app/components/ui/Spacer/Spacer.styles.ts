@@ -1,4 +1,4 @@
 export const styles = {
-	small: 'h-6 md:h-10 lg:h-16',
-	large: 'h-12 md:h-20 lg:h-32',
+	small: 'h-8 md:h-16',
+	large: 'h-16 md:h-24',
 };

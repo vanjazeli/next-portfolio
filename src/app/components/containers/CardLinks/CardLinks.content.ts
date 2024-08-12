@@ -68,7 +68,7 @@ export const projectLinksContent: CardLinksContentT = [
 		variant: 'nonClickable',
 		heading: 'World-Renowned Clothing Brand Website',
 		description: 'A project created for a world-renowned clothing brand, featuring an intricate design and numerous animations. The project was used as a sponsorship platform during a global sporting event, amplifying brand presence and audience interaction.',
-		location: 'The Netherlands',
+		location: 'Netherlands',
 		additionalItems: ['Next.js', 'TypeScript', 'Atomic Design', 'SCSS', 'Pixel Perfect', 'GSAP', 'Storybook'],
 	},
 ];
