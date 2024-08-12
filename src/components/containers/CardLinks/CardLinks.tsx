@@ -2,6 +2,7 @@ import Image from 'next/image';
 import ArrowLink from '../../ui/ArrowLink/ArrowLink';
 import ExternalLink from '../../ui/ExternalLink/ExternalLink';
 import Icon from '../../ui/Icon/Icon';
+import Chip from '@/components/ui/Chip/Chip';
 import { CardLinksContentT } from './CardLinks.types';
 import { styles } from './CardLinks.styles';
 
@@ -36,9 +37,7 @@ export default function CardLinks({ content }: CardLinksProps) {
 									{item.additionalItems && (
 										<div className={styles.additionalItemsWrap}>
 											{item.additionalItems.map((additionalItem, additionalItemIndex) => (
-												<span key={additionalItemIndex} className={styles.additionalItem}>
-													{additionalItem}
-												</span>
+												<Chip text={additionalItem} variant="main" key={additionalItemIndex} />
 											))}
 										</div>
 									)}
