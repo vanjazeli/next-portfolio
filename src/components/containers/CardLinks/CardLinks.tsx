@@ -18,7 +18,7 @@ export default function CardLinks({ content }: CardLinksProps) {
 			{content.map((item, index) => {
 				if (item.variant === 'clickable')
 					return (
-						<li key={index}>
+						<li className={styles.listItem} key={index}>
 							<div className={styles.clickableWrap}>
 								<div className={styles.overlay}></div>
 								<div className={styles.imageHolder}>
@@ -48,7 +48,7 @@ export default function CardLinks({ content }: CardLinksProps) {
 
 				if (item.variant === 'nonClickable')
 					return (
-						<li key={index}>
+						<li className={styles.listItem} key={index}>
 							<div className={styles.nonClickableWrap}>
 								<div className={styles.imageHolder}>
 									<div className={styles.nonClickableImageWrap}>

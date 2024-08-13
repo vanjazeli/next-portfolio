@@ -1,5 +1,6 @@
 export const styles = {
 	list: 'flex flex-col gap-8',
+	listItem: 'lg:-translate-x-4 lg:w-[calc(100%+2rem)]',
 	clickableWrap: 'group isolate flex gap-4 lg:p-4 relative overflow-hidden rounded-lg',
 	overlay: 'hidden lg:block absolute top-0 left-0 opacity-0 group-hover:opacity-10 w-full h-full bg-white transition-opacity -z-10',
 	imageHolder: 'w-1/4',
