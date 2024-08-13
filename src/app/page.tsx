@@ -20,12 +20,17 @@ export default function Home() {
 						<main className={styles.mainSection}>
 							<MultipleParagraphs content={summaryContent} />
 							<Spacer />
+
+							<MultipleParagraphs content={skillsContent} />
+							<Spacer isSmall />
 							<InfiniteSlide />
 							<Spacer />
+
 							<MultipleParagraphs content={clientsAndProjectsContent} />
 							<Spacer isSmall />
 							<CardLinks content={projectLinksContent} />
 							<Spacer />
+
 							<MultipleParagraphs content={miniLibrariesContent} />
 							<Spacer isSmall />
 							<CardLinks content={playgroundContent} />
