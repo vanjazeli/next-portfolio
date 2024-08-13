@@ -21,6 +21,15 @@ export const summaryContent: MultipleParagraphsContentT = {
 	},
 };
 
+export const skillsContent: MultipleParagraphsContentT = {
+	heading: 'Coding Skills',
+	paragraphs: [
+		{
+			text: '"The greatest teacher, failure is. Much to learn, you still have." — Yoda',
+		},
+	],
+};
+
 export const clientsAndProjectsContent: MultipleParagraphsContentT = {
 	heading: 'Clients & Projects',
 	paragraphs: [

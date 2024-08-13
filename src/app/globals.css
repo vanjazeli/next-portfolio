@@ -48,3 +48,17 @@ body {
     text-wrap: balance;
   }
 }
+
+@keyframes negative-infinite {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-negative-infinite {
+  animation: negative-infinite 10s linear infinite;
+}

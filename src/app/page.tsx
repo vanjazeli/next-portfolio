@@ -1,11 +1,12 @@
 import Header from '@/components/containers/Header/Header';
 import { headerContent } from '@/components/containers/Header/Header.content';
 import MultipleParagraphs from '@/components/containers/MultipleParagraphs/MultipleParagraphs';
-import { summaryContent, clientsAndProjectsContent, miniLibrariesContent } from '@/components/containers/MultipleParagraphs/MultipleParagraphs.content';
+import { summaryContent, skillsContent, clientsAndProjectsContent, miniLibrariesContent } from '@/components/containers/MultipleParagraphs/MultipleParagraphs.content';
 import CardLinks from '@/components/containers/CardLinks/CardLinks';
 import { projectLinksContent, playgroundContent } from '@/components/containers/CardLinks/CardLinks.content';
 import Spacer from '../components/ui/Spacer/Spacer';
 import { styles } from './page.styles';
+import InfiniteSlide from '@/components/containers/InfiniteSlide/InfiniteSlide';
 
 export default function Home() {
 	return (
@@ -18,6 +19,8 @@ export default function Home() {
 					<div className={styles.mainContent}>
 						<main className={styles.mainSection}>
 							<MultipleParagraphs content={summaryContent} />
+							<Spacer />
+							<InfiniteSlide />
 							<Spacer />
 							<MultipleParagraphs content={clientsAndProjectsContent} />
 							<Spacer isSmall />
