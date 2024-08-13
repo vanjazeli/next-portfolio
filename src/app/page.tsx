@@ -4,9 +4,11 @@ import MultipleParagraphs from '@/components/containers/MultipleParagraphs/Multi
 import { summaryContent, skillsContent, clientsAndProjectsContent, miniLibrariesContent } from '@/components/containers/MultipleParagraphs/MultipleParagraphs.content';
 import CardLinks from '@/components/containers/CardLinks/CardLinks';
 import { projectLinksContent, playgroundContent } from '@/components/containers/CardLinks/CardLinks.content';
+import InfiniteSlide from '@/components/containers/InfiniteSlide/InfiniteSlides';
+import { skillsSliderContent } from '@/components/containers/InfiniteSlide/InfiniteSlides.content';
+
 import Spacer from '../components/ui/Spacer/Spacer';
 import { styles } from './page.styles';
-import InfiniteSlide from '@/components/containers/InfiniteSlide/InfiniteSlide';
 
 export default function Home() {
 	return (
@@ -23,7 +25,7 @@ export default function Home() {
 
 							<MultipleParagraphs content={skillsContent} />
 							<Spacer isSmall />
-							<InfiniteSlide />
+							<InfiniteSlide content={skillsSliderContent} />
 							<Spacer />
 
 							<MultipleParagraphs content={clientsAndProjectsContent} />
