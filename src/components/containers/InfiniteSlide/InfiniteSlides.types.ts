@@ -1,10 +1,9 @@
-import { ChipVariantsT } from '@/components/ui/Chip/Chip.tyles';
+import { ChipColorsT } from '@/components/ui/Chip/Chip.tyles';
 
 export type InfiniteSlidesContentT = {
 	sliders: Array<{
 		name: string;
-		isDirectionNegative: boolean;
-		variant: ChipVariantsT;
+		color: ChipColorsT;
 		slides: Array<{
 			text: string;
 		}>;

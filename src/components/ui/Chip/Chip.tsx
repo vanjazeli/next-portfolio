@@ -1,12 +1,12 @@
 import { styles } from './Chip.styles';
-import { ChipVariantsT } from './Chip.tyles';
+import { ChipColorsT } from './Chip.types';
+import classNames from 'classnames';
 
 type ChipProps = {
 	text: string;
-	variant: ChipVariantsT;
+	color: ChipColorsT;
 };
 
-export default function Chip({ text, variant }: ChipProps) {
-	if (variant === 'main') return <span className={styles.main}>{text}</span>;
-	if (variant === 'other') return <span className={styles.other}>{text}</span>;
+export default function Chip({ text, color }: ChipProps) {
+	return <span className={classNames(styles[color], styles.chip)}>{text}</span>;
 }

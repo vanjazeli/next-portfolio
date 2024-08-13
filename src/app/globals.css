@@ -70,9 +70,5 @@ body {
 }
 
 .animate-negative-infinite {
-  animation: negative-infinite 16s linear infinite;
-}
-
-.animate-positive-infinite {
-  animation: positive-infinite 20s linear infinite;
+  animation: negative-infinite 30s linear infinite;
 }

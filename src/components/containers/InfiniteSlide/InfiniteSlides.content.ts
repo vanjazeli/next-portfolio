@@ -1,11 +1,10 @@
-import type { InfiniteSlidesContentT } from './Infiniteslides.types';
+import type { InfiniteSlidesContentT } from './InfiniteSlides.types';
 
 export const skillsSliderContent: InfiniteSlidesContentT = {
 	sliders: [
 		{
 			name: 'Main skills',
-			isDirectionNegative: true,
-			variant: 'main',
+			color: 'teal',
 			slides: [
 				{
 					text: 'HTML',
@@ -33,40 +32,54 @@ export const skillsSliderContent: InfiniteSlidesContentT = {
 				},
 				{
 					text: 'React',
+				},
+				{
+					text: 'Next.js',
 				},
 			],
 		},
 		{
-			name: 'Main skills',
-			isDirectionNegative: false,
-			variant: 'other',
+			name: 'Used at some point',
+			color: 'sky',
 			slides: [
 				{
-					text: 'HTML',
+					text: 'Redux',
 				},
 				{
-					text: 'CSS',
+					text: 'Zustand',
 				},
 				{
-					text: 'SCSS',
+					text: 'Material UI',
 				},
 				{
-					text: 'BEM',
+					text: 'Tanstack Query',
 				},
 				{
-					text: 'Tailwind CSS',
+					text: 'Axios',
 				},
 				{
-					text: 'JavaScript',
+					text: 'React Router',
 				},
 				{
-					text: 'TypeScript',
+					text: 'React Hook Form',
 				},
 				{
-					text: 'GSAP',
+					text: 'Storybook',
 				},
 				{
-					text: 'React',
+					text: 'Accessibility',
+				},
+				{
+					text: 'Three.js',
+				},
+				{
+					text: 'Atomic Design',
+				},
+				{
+					text: 'Jest',
+				},
+				{
+					text: 'React Testing Library',
 				},
 			],
 		},
