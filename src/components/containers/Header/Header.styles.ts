@@ -1,7 +1,7 @@
 export const styles = {
 	header: 'py-8 lg:py-16 lg:mb-0 lg:h-full lg:flex lg:flex-col lg:justify-between lg:sticky lg:top-0 lg:max-h-dvh',
 	topInfo: 'flex flex-col items-start lg:flex-none',
-	imageWrap: 'relative w-40 aspect-square mb-4 lg:mb-4 inline-block rounded-full overflow-hidden',
+	imageWrap: 'hidden lg:block relative w-40 aspect-square mb-4 lg:mb-4 inline-block rounded-full overflow-hidden',
 	image: 'absolute top-0 left-0 w-full h-full object-cover',
 	heading: 'mb-1 lg:mb-2 font-bold tracking-tight text-slate-200 text-4xl md:text-5xl',
 	headingLink: 'lg:hover:text-teal-300 transition-colors',
