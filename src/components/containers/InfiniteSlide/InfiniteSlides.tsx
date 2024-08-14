@@ -1,5 +1,7 @@
 import Chip from '@/components/ui/Chip/Chip';
+import classNames from 'classnames';
 import type { InfiniteSlidesContentT } from './InfiniteSlides.types';
+import { ChipColorsT } from '@/components/ui/Chip/Chip.types';
 
 type InfiniteSlidesProps = {
 	content?: InfiniteSlidesContentT;
@@ -11,7 +13,17 @@ export default function InfiniteSlides({ content }: InfiniteSlidesProps) {
 	const { sliders } = content;
 
 	return (
-		<section>
+		<section className="flex flex-col gap-2">
+			{sliders && (
+				<ul className="flex gap-4">
+					{sliders.map(({ name, color }, sliderIndex) => (
+						<li className="flex items-center gap-2" key={sliderIndex}>
+							<span className="h-2 w-2 rounded-full">{color}</span>
+							<span className="text-slate-400">{name}</span>
+						</li>
+					))}
+				</ul>
+			)}
 			{sliders && (
 				<div className="-translate-x-4 md:translate-x-0 w-[calc(100%+2rem)] md:w-auto flex flex-col gap-2 mb-4 last:mb-0">
 					{sliders.map((slider, sliderIndex) => (

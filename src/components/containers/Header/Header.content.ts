@@ -13,7 +13,7 @@ export const headerContent: HeaderContentT = {
 			text: 'Vanja Želi',
 		},
 		position: 'Mid-level Front-end Engineer',
-		description: `A self-taught front-end developer, a big time <span class="font-bold text-slate-200">fast food junkie</span> and just a typical nerd who's <span class="font-bold text-slate-200">nuts for technology</span>.`,
+		description: `A self-taught front-end developer, a big time fast food junkie and just a typical nerd who's nuts for technology.`,
 		additionalInfo: [
 			{
 				iconVariant: 'location',

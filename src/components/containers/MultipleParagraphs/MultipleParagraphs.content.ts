@@ -4,10 +4,10 @@ export const summaryContent: MultipleParagraphsContentT = {
 	heading: 'Brief Summary',
 	paragraphs: [
 		{
-			text: `As a front-end developer, I officially began my career in Feb 2022 after a year-long period of dedicated selflearning. With a primary focus on <span class="font-bold text-slate-200">React</span> and <span class="font-bold text-slate-200">CSS</span>, I specialize in creating highly performant web applications and transforming complex designs into <span class="font-bold text-slate-200">pixel-perfect</span>, highly responsive, animated interfaces. My portfolio includes over 5 successful projects for various clients, showcasing my adaptability and exceptional problemsolving abilities. <span class="font-bold text-slate-200">Driven by a passion for continuous learning</span>, I'm commended by clients for my keen attention to detail and effective communication skills.`,
+			text: `As a front-end developer, I officially began my career in Feb 2022 after a year-long period of dedicated selflearning. With a primary focus on React and CSS, I specialize in creating highly performant web applications and transforming complex designs into pixel-perfect, highly responsive, animated interfaces. My portfolio includes over 5 successful projects for various clients, showcasing my adaptability and exceptional problemsolving abilities. Driven by a passion for continuous learning, I'm commended by clients for my keen attention to detail and effective communication skills.`,
 		},
 		{
-			text: 'Eager to <span class="font-bold text-slate-200">contribute while expanding my knowledge</span> of coding beyond the boundaries of comfort zone.',
+			text: 'Eager to contribute while expanding my knowledge of coding beyond the boundaries of comfort zone.',
 		},
 		{
 			text: 'Feel free to browse through my résumé to find out more about me.',
