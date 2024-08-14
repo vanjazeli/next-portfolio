@@ -6,7 +6,7 @@ export const styles = {
 	heading: 'mb-1 lg:mb-2 font-bold tracking-tight text-slate-200 text-4xl md:text-5xl',
 	headingLink: 'lg:hover:text-teal-300 transition-colors',
 	position: 'mb-4 font-medium tracking-tight text-slate-200 text-xl',
-	description: 'mb-4 md:max-w-xs text-slate-400',
+	description: 'mb-4 md:max-w-lg lg:max-w-xs text-slate-400',
 	additionalList: 'mb-4 flex flex-col gap-1',
 	item: 'flex align-center gap-2 text-slate-400',
 	additionalIcon: 'w-4',
