@@ -39,7 +39,7 @@ export const skillsSliderContent: InfiniteSlidesContentT = {
 			],
 		},
 		{
-			name: 'Used at some point',
+			name: 'Used before',
 			color: 'sky',
 			slides: [
 				{

@@ -8,5 +8,5 @@ type ChipProps = {
 };
 
 export default function Chip({ text, color }: ChipProps) {
-	return <span className={classNames(styles[color], styles.chip)}>{text}</span>;
+	return <span className={classNames(styles.chip, styles[color])}>{text}</span>;
 }

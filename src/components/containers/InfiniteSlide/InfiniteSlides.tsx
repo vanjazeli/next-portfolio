@@ -1,7 +1,7 @@
 import Chip from '@/components/ui/Chip/Chip';
-import classNames from 'classnames';
 import type { InfiniteSlidesContentT } from './InfiniteSlides.types';
-import { ChipColorsT } from '@/components/ui/Chip/Chip.types';
+import { styles, modifiers } from './InfiniteSlides.styles';
+import classNames from 'classnames';
 
 type InfiniteSlidesProps = {
 	content?: InfiniteSlidesContentT;
@@ -13,22 +13,22 @@ export default function InfiniteSlides({ content }: InfiniteSlidesProps) {
 	const { sliders } = content;
 
 	return (
-		<section className="flex flex-col gap-2">
+		<section className={styles.section}>
 			{sliders && (
-				<ul className="flex gap-4">
+				<ul className={styles.legendList}>
 					{sliders.map(({ name, color }, sliderIndex) => (
-						<li className="flex items-center gap-2" key={sliderIndex}>
-							<span className="h-2 w-2 rounded-full">{color}</span>
-							<span className="text-slate-400">{name}</span>
+						<li className={styles.legendItem} key={sliderIndex}>
+							<span className={classNames(styles.legendBullet, modifiers[color])}></span>
+							<span className={styles.legendText}>{name}</span>
 						</li>
 					))}
 				</ul>
 			)}
 			{sliders && (
-				<div className="-translate-x-4 md:translate-x-0 w-[calc(100%+2rem)] md:w-auto flex flex-col gap-2 mb-4 last:mb-0">
+				<div className={styles.slidesWrap}>
 					{sliders.map((slider, sliderIndex) => (
-						<div className="pb-px flex overflow-hidden relative lg:max-w-md before:bg-gradient-to-r before:from-slate-900 before:to-transparent before:h-full before:w-8 before:absolute before:top-0 before:left-0 before:z-10 after:bg-gradient-to-l after:from-slate-900 after:to-transparent after:h-full after:w-8 after:absolute after:top-0 after:right-0 after:z-10" key={sliderIndex}>
-							<ul className="animate-negative-infinite pl-2 flex flex-nowrap gap-2">
+						<div className={styles.slideHolder} key={sliderIndex}>
+							<ul className={styles.slide}>
 								{slider.slides &&
 									slider.slides.map((item, itemIndex) => (
 										<li key={itemIndex}>
@@ -36,7 +36,7 @@ export default function InfiniteSlides({ content }: InfiniteSlidesProps) {
 										</li>
 									))}
 							</ul>
-							<ul className="animate-negative-infinite pl-2 flex flex-nowrap gap-2" aria-hidden="true">
+							<ul className={styles.slide} aria-hidden="true">
 								{slider.slides &&
 									slider.slides.map((item, itemIndex) => (
 										<li key={itemIndex}>

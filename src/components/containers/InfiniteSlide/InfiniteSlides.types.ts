@@ -1,4 +1,4 @@
-import { ChipColorsT } from '@/components/ui/Chip/Chip.tyles';
+import { ChipColorsT } from '@/components/ui/Chip/Chip.types';
 
 export type InfiniteSlidesContentT = {
 	sliders: Array<{
