@@ -43,6 +43,9 @@ export const skillsSliderContent: InfiniteSlidesContentT = {
 			color: 'sky',
 			slides: [
 				{
+					text: 'Vite',
+				},
+				{
 					text: 'Redux',
 				},
 				{
