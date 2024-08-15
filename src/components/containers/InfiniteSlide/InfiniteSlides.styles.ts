@@ -1,7 +1,7 @@
 export const styles = {
 	section: 'flex flex-col gap-2',
-	legendList: 'flex gap-4',
-	legendItem: 'flex items-center gap-2',
+	legendList: 'flex gap-x-4 lg:gap-y-2 flex-wrap',
+	legendItem: 'flex items-center gap-2 flex-nowrap',
 	legendBullet: 'h-2 w-2 rounded-full',
 	legendText: 'text-slate-400',
 	slidesWrap: '-translate-x-4 md:translate-x-0 w-[calc(100%+2rem)] md:w-auto flex flex-col gap-2 mb-4 last:mb-0',
