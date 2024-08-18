@@ -30,6 +30,10 @@ export const skillsContent: MultipleParagraphsContentT = {
 	],
 };
 
+export const careerContent: MultipleParagraphsContentT = {
+	heading: 'Career',
+};
+
 export const clientsAndProjectsContent: MultipleParagraphsContentT = {
 	heading: 'Clients & Projects',
 	paragraphs: [

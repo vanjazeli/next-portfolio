@@ -1,6 +1,6 @@
 import { styles } from './Chip.styles';
 import { ChipColorsT } from './Chip.types';
-import classNames from 'classnames';
+import cn from '@/utilities/cn';
 
 type ChipProps = {
 	text: string;
@@ -8,5 +8,5 @@ type ChipProps = {
 };
 
 export default function Chip({ text, color }: ChipProps) {
-	return <span className={classNames(styles.chip, styles[color])}>{text}</span>;
+	return <span className={cn(styles.chip, styles[color])}>{text}</span>;
 }

@@ -1,7 +1,7 @@
 import Chip from '@/components/ui/Chip/Chip';
 import type { InfiniteSlidesContentT } from './InfiniteSlides.types';
 import { styles, modifiers } from './InfiniteSlides.styles';
-import classNames from 'classnames';
+import cn from '@/utilities/cn';
 
 type InfiniteSlidesProps = {
 	content?: InfiniteSlidesContentT;
@@ -18,7 +18,7 @@ export default function InfiniteSlides({ content }: InfiniteSlidesProps) {
 				<ul className={styles.legendList}>
 					{sliders.map(({ name, color }, sliderIndex) => (
 						<li className={styles.legendItem} key={sliderIndex}>
-							<span className={classNames(styles.legendBullet, modifiers[color])}></span>
+							<span className={cn(styles.legendBullet, modifiers[color])}></span>
 							<span className={styles.legendText}>{name}</span>
 						</li>
 					))}
