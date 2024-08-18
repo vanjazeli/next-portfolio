@@ -10,7 +10,7 @@ export const summaryContent: MultipleParagraphsContentT = {
 			text: 'Eager to contribute while expanding my knowledge of coding beyond the boundaries of comfort zone.',
 		},
 		{
-			text: 'Feel free to browse through my résumé to find out more about me.',
+			text: 'Feel free to browse through my résumé to find out a little bit more about me.',
 		},
 	],
 	link: {
