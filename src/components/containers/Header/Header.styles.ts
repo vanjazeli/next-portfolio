@@ -7,7 +7,7 @@ export const styles = {
 	headingLink: 'lg:hover:text-teal-300 transition-colors',
 	position: 'mb-4 font-medium tracking-tight text-slate-200 text-xl last:mb-0',
 	description: 'mb-4 md:max-w-lg lg:max-w-xs text-slate-400 last:mb-0',
-	additionalList: 'mb-4 flex flex-col gap-1 last:mb-0',
+	additionalList: 'mb-4 flex flex-col gap-1',
 	item: 'flex align-center gap-2 text-slate-400',
 	additionalIcon: 'w-4',
 	bottomList: 'flex gap-4 text-slate-400',
