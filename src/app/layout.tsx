@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import SmoothScroller from '@/components/client/SmoothScroller';
+import SmoothScroller from '@/components/client/SmoothScroller/SmoothScroller';
 import './globals.css';
 
 export const metadata: Metadata = {
