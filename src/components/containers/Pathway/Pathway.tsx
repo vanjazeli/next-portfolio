@@ -43,7 +43,6 @@ export default function Pathway({ content }: PathwayProps) {
 						const { link, time, description, location, additionalInfo } = item;
 						const mods = getModifiers(itemIndex, items.length);
 
-						// TODO: Add mobile styles
 						return (
 							<li className={styles.item} key={itemIndex}>
 								<div className={styles.lineHolder}>
