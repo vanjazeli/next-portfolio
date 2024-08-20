@@ -4,7 +4,7 @@ export const skillsSliderContent: InfiniteSlidesContentT = {
 	sliders: [
 		{
 			name: 'Main skills',
-			color: 'cyan',
+			color: 'blue',
 			slides: [
 				{
 					text: 'HTML',
@@ -40,7 +40,7 @@ export const skillsSliderContent: InfiniteSlidesContentT = {
 		},
 		{
 			name: 'Used before',
-			color: 'blue',
+			color: 'gray',
 			slides: [
 				{
 					text: 'Vite',

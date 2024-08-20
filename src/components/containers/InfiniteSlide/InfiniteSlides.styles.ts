@@ -11,7 +11,7 @@ export const styles = {
 
 export const modifiers = {
 	slate: 'bg-slate-500',
-	gray: 'bg-gray-500',
+	gray: 'bg-gray-400',
 	teal: 'bg-teal-500',
 	cyan: 'bg-cyan-500',
 	sky: 'bg-sky-500',
