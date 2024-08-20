@@ -12,10 +12,12 @@ import Spacer from '../components/ui/Spacer/Spacer';
 import BlurWrap from '@/components/client/BlurWrap/BlurWrap';
 import { styles } from './page.styles';
 import { DevicesE } from '@/components/client/BlurWrap/BlurWrap.enums';
+import LoadingOverlay from '@/components/client/LoadingOverlay/LoadingOverlay';
 
 export default function Home() {
 	return (
 		<BlurWrap widthQuery={DevicesE.mobile}>
+			<LoadingOverlay />
 			<div className={styles.pageWrap}>
 				<div className={styles.container}>
 					<div className={styles.contentWrap}>
