@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { styles } from './BlurWrap.styles';
 
 type BlurWrapProps = {
 	children: React.ReactNode;
@@ -45,7 +46,7 @@ export default function BlurWrap({ children }: BlurWrapProps) {
 	}, [lastScrollTop, lastTimestamp]);
 
 	return (
-		<div className="transition-all" style={{ filter: `blur(${Math.round(scaledValue)}px)` }}>
+		<div className={styles.blurWrap} style={{ filter: `blur(${Math.round(scaledValue)}px)` }}>
 			{children}
 		</div>
 	);
