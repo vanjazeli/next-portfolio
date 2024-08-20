@@ -9,6 +9,7 @@ import { skillsSliderContent } from '@/components/containers/InfiniteSlide/Infin
 import Pathway from '@/components/containers/Pathway/Pathway';
 import { careerListContent } from '@/components/containers/Pathway/Pathway.content';
 import Spacer from '../components/ui/Spacer/Spacer';
+import BlurWrap from '@/components/client/BlurWrap/BlurWrap';
 import { styles } from './page.styles';
 
 export default function Home() {
@@ -21,28 +22,30 @@ export default function Home() {
 					</div>
 					<div className={styles.mainContent}>
 						<main className={styles.mainSection}>
-							<MultipleParagraphs content={summaryContent} />
-							<Spacer />
+							<BlurWrap>
+								<MultipleParagraphs content={summaryContent} />
+								<Spacer />
 
-							<MultipleParagraphs content={skillsContent} />
-							<Spacer isSmall />
-							<InfiniteSlide content={skillsSliderContent} />
-							<Spacer />
+								<MultipleParagraphs content={skillsContent} />
+								<Spacer isSmall />
+								<InfiniteSlide content={skillsSliderContent} />
+								<Spacer />
 
-							<MultipleParagraphs content={careerContent} />
-							<Spacer isSmall />
-							<Pathway content={careerListContent} />
-							<Spacer />
+								<MultipleParagraphs content={careerContent} />
+								<Spacer isSmall />
+								<Pathway content={careerListContent} />
+								<Spacer />
 
-							<MultipleParagraphs content={clientsAndProjectsContent} />
-							<Spacer isSmall />
-							<CardLinks content={projectLinksContent} />
-							<Spacer />
+								<MultipleParagraphs content={clientsAndProjectsContent} />
+								<Spacer isSmall />
+								<CardLinks content={projectLinksContent} />
+								<Spacer />
 
-							<MultipleParagraphs content={miniLibrariesContent} />
-							<Spacer isSmall />
-							<CardLinks content={playgroundContent} />
-							<Spacer />
+								<MultipleParagraphs content={miniLibrariesContent} />
+								<Spacer isSmall />
+								<CardLinks content={playgroundContent} />
+								<Spacer />
+							</BlurWrap>
 						</main>
 					</div>
 				</div>
