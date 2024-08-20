@@ -68,7 +68,7 @@ export default function Pathway({ content }: PathwayProps) {
 									{additionalInfo && (
 										<div className={styles.additionalInfo}>
 											{additionalInfo.map((info, infoIndex) => (
-												<Chip text={info.text} color="teal" key={infoIndex} />
+												<Chip text={info.text} color="blue" key={infoIndex} />
 											))}
 										</div>
 									)}

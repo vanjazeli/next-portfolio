@@ -4,7 +4,7 @@ export const styles = {
 	imageWrap: 'hidden lg:block relative w-40 aspect-square mb-4 inline-block rounded-full overflow-hidden last:mb-0',
 	image: 'absolute top-0 left-0 w-full h-full object-cover',
 	heading: 'mb-1 lg:mb-2 font-bold tracking-tight text-slate-200 text-4xl md:text-5xl last:mb-0',
-	headingLink: 'lg:hover:text-teal-300 transition-colors',
+	headingLink: 'lg:hover:text-blue-500 transition-colors',
 	position: 'mb-4 font-medium tracking-tight text-slate-200 text-xl last:mb-0',
 	description: 'mb-4 md:max-w-lg lg:max-w-xs text-slate-400 last:mb-0',
 	additionalList: 'mb-4 flex flex-col gap-1',
@@ -12,5 +12,5 @@ export const styles = {
 	additionalIcon: 'w-4',
 	bottomList: 'flex gap-4 text-slate-400',
 	bottomItem: 'w-8',
-	bottomLink: 'lg:hover:text-teal-300 transition-colors',
+	bottomLink: 'lg:hover:text-blue-500 transition-colors',
 };

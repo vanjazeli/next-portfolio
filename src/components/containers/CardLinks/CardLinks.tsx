@@ -37,7 +37,7 @@ export default function CardLinks({ content }: CardLinksProps) {
 									{item.additionalItems && (
 										<div className={styles.additionalItemsWrap}>
 											{item.additionalItems.map((additionalItem, additionalItemIndex) => (
-												<Chip text={additionalItem} color="teal" key={additionalItemIndex} />
+												<Chip text={additionalItem} color="blue" key={additionalItemIndex} />
 											))}
 										</div>
 									)}
@@ -70,7 +70,7 @@ export default function CardLinks({ content }: CardLinksProps) {
 									{item.additionalItems && (
 										<div className={styles.additionalItemsWrap}>
 											{item.additionalItems.map((additionalItem, additionalItemIndex) => (
-												<Chip text={additionalItem} color="teal" key={additionalItemIndex} />
+												<Chip text={additionalItem} color="blue" key={additionalItemIndex} />
 											))}
 										</div>
 									)}
