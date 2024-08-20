@@ -11,45 +11,48 @@ import { careerListContent } from '@/components/containers/Pathway/Pathway.conte
 import Spacer from '../components/ui/Spacer/Spacer';
 import BlurWrap from '@/components/client/BlurWrap/BlurWrap';
 import { styles } from './page.styles';
+import { DevicesE } from '@/components/client/BlurWrap/BlurWrap.enums';
 
 export default function Home() {
 	return (
-		<div className={styles.pageWrap}>
-			<div className={styles.container}>
-				<div className={styles.contentWrap}>
-					<div className={styles.sidebar}>
-						<Header content={headerContent} />
-					</div>
-					<div className={styles.mainContent}>
-						<main className={styles.mainSection}>
-							<BlurWrap>
-								<MultipleParagraphs content={summaryContent} />
-								<Spacer />
+		<BlurWrap widthQuery={DevicesE.mobile}>
+			<div className={styles.pageWrap}>
+				<div className={styles.container}>
+					<div className={styles.contentWrap}>
+						<div className={styles.sidebar}>
+							<Header content={headerContent} />
+						</div>
+						<div className={styles.mainContent}>
+							<main className={styles.mainSection}>
+								<BlurWrap widthQuery={DevicesE.desktop}>
+									<MultipleParagraphs content={summaryContent} />
+									<Spacer />
 
-								<MultipleParagraphs content={skillsContent} />
-								<Spacer isSmall />
-								<InfiniteSlide content={skillsSliderContent} />
-								<Spacer />
+									<MultipleParagraphs content={skillsContent} />
+									<Spacer isSmall />
+									<InfiniteSlide content={skillsSliderContent} />
+									<Spacer />
 
-								<MultipleParagraphs content={careerContent} />
-								<Spacer isSmall />
-								<Pathway content={careerListContent} />
-								<Spacer />
+									<MultipleParagraphs content={careerContent} />
+									<Spacer isSmall />
+									<Pathway content={careerListContent} />
+									<Spacer />
 
-								<MultipleParagraphs content={clientsAndProjectsContent} />
-								<Spacer isSmall />
-								<CardLinks content={projectLinksContent} />
-								<Spacer />
+									<MultipleParagraphs content={clientsAndProjectsContent} />
+									<Spacer isSmall />
+									<CardLinks content={projectLinksContent} />
+									<Spacer />
 
-								<MultipleParagraphs content={miniLibrariesContent} />
-								<Spacer isSmall />
-								<CardLinks content={playgroundContent} />
-								<Spacer />
-							</BlurWrap>
-						</main>
+									<MultipleParagraphs content={miniLibrariesContent} />
+									<Spacer isSmall />
+									<CardLinks content={playgroundContent} />
+									<Spacer />
+								</BlurWrap>
+							</main>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		</BlurWrap>
 	);
 }
