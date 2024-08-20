@@ -19,11 +19,11 @@ export default function Header({ content }: HeaderProps) {
 		<header className={styles.header}>
 			{topInfo && (
 				<div className={styles.topInfo}>
-					{/* {image && (
+					{image && (
 						<div className={styles.imageWrap}>
 							<Image className={styles.image} src={image.url} alt={image.alt} height={image.height} width={image.width} priority />
 						</div>
-					)} */}
+					)}
 					{headingLink && (
 						<h1 className={styles.heading}>
 							<Link className={styles.headingLink} href={headingLink.url}>
