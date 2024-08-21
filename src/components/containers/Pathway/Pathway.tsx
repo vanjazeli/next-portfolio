@@ -4,6 +4,7 @@ import { styles, modifiers } from './Pathway.styles';
 import cn from '@/utilities/cn';
 import type { PathwayContentT } from './Pathway.types';
 import Icon from '@/components/ui/Icon/Icon';
+import { ChipColorsE } from '@/components/ui/Chip/Chip.enums';
 
 type PathwayProps = {
 	content?: PathwayContentT;
@@ -68,7 +69,7 @@ export default function Pathway({ content }: PathwayProps) {
 									{additionalInfo && (
 										<div className={styles.additionalInfo}>
 											{additionalInfo.map((info, infoIndex) => (
-												<Chip text={info.text} color="cyan" key={infoIndex} />
+												<Chip text={info.text} color={ChipColorsE.cyan} key={infoIndex} />
 											))}
 										</div>
 									)}

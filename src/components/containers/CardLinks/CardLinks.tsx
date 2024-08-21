@@ -5,6 +5,7 @@ import Icon from '../../ui/Icon/Icon';
 import Chip from '@/components/ui/Chip/Chip';
 import { CardLinksContentT } from './CardLinks.types';
 import { styles } from './CardLinks.styles';
+import { ChipColorsE } from '@/components/ui/Chip/Chip.enums';
 
 type CardLinksProps = {
 	content?: CardLinksContentT;
@@ -37,7 +38,7 @@ export default function CardLinks({ content }: CardLinksProps) {
 									{item.additionalItems && (
 										<div className={styles.additionalItemsWrap}>
 											{item.additionalItems.map((additionalItem, additionalItemIndex) => (
-												<Chip text={additionalItem} color="cyan" key={additionalItemIndex} />
+												<Chip text={additionalItem} color={ChipColorsE.cyan} key={additionalItemIndex} />
 											))}
 										</div>
 									)}
@@ -70,7 +71,7 @@ export default function CardLinks({ content }: CardLinksProps) {
 									{item.additionalItems && (
 										<div className={styles.additionalItemsWrap}>
 											{item.additionalItems.map((additionalItem, additionalItemIndex) => (
-												<Chip text={additionalItem} color="cyan" key={additionalItemIndex} />
+												<Chip text={additionalItem} color={ChipColorsE.cyan} key={additionalItemIndex} />
 											))}
 										</div>
 									)}
