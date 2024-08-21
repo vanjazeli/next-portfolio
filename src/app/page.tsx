@@ -8,6 +8,8 @@ import InfiniteSlide from '@/components/containers/InfiniteSlide/InfiniteSlides'
 import { skillsSliderContent } from '@/components/containers/InfiniteSlide/InfiniteSlides.content';
 import Pathway from '@/components/containers/Pathway/Pathway';
 import { careerListContent } from '@/components/containers/Pathway/Pathway.content';
+import Footer from '@/components/containers/Footer/Footer';
+import { footerContent } from '@/components/containers/Footer/Footer.content';
 import Spacer from '../components/ui/Spacer/Spacer';
 import BlurWrap from '@/components/client/BlurWrap/BlurWrap';
 import { styles } from './page.styles';
@@ -25,8 +27,8 @@ export default function Home() {
 							<Header content={headerContent} />
 						</div>
 						<div className={styles.mainContent}>
-							<main className={styles.mainSection}>
-								<BlurWrap widthQuery={DevicesE.desktop}>
+							<BlurWrap widthQuery={DevicesE.desktop}>
+								<main>
 									<MultipleParagraphs content={summaryContent} />
 									<Spacer />
 
@@ -49,8 +51,9 @@ export default function Home() {
 									<Spacer isSmall />
 									<CardLinks content={playgroundContent} />
 									<Spacer />
-								</BlurWrap>
-							</main>
+								</main>
+								<Footer content={footerContent} />
+							</BlurWrap>
 						</div>
 					</div>
 				</div>
