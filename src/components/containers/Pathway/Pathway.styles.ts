@@ -11,7 +11,6 @@ export const styles = {
 	description: 'text-slate-400 mb-2 last:mb-0',
 	locationWrap: 'flex align-center gap-2 text-slate-200 mb-3 last:mb-0',
 	locationIcon: 'w-4 text-slate-400',
-	locationText: 'font-bold',
 	additionalInfo: 'flex gap-2 flex-wrap',
 };
 

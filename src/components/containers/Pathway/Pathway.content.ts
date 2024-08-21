@@ -13,7 +13,7 @@ export const careerListContent: PathwayContentT = {
 				period: 'May 2022 - Present',
 			},
 			description: 'I contributed to many different projects, working on tasks such as animations, creating modules from scratch, and debugging existing codebases, with a primary focus on React and CSS.',
-			location: 'Novi Sad, Serbia',
+			location: '<span class="font-bold">Novi Sad, Serbia</span><span class="text-slate-400"> - On Site</span>',
 			additionalInfo: [
 				{
 					text: 'React',
@@ -43,7 +43,7 @@ export const careerListContent: PathwayContentT = {
 				period: 'Feb 2022 - Apr 2022',
 			},
 			description: 'Main focus was setting up project starters using gulp.js, and then utilizing the same foundation to turn designs into functional pages.',
-			location: 'Novi Sad, Serbia',
+			location: '<span class="font-bold">Novi Sad, Serbia</span><span class="text-slate-400"> - Remote</span>',
 			additionalInfo: [
 				{
 					text: 'Umbraco',

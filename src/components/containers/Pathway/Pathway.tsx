@@ -5,6 +5,7 @@ import cn from '@/utilities/cn';
 import type { PathwayContentT } from './Pathway.types';
 import Icon from '@/components/ui/Icon/Icon';
 import { ChipColorsE } from '@/components/ui/Chip/Chip.enums';
+import { removeScriptTags } from '@/utilities/removeScriptTags';
 
 type PathwayProps = {
 	content?: PathwayContentT;
@@ -63,7 +64,7 @@ export default function Pathway({ content }: PathwayProps) {
 									{location && (
 										<div className={styles.locationWrap}>
 											<Icon className={styles.locationIcon} variant="location" />
-											<span className={styles.locationText}>{item.location}</span>
+											<span dangerouslySetInnerHTML={{ __html: removeScriptTags(location) }} />
 										</div>
 									)}
 									{additionalInfo && (
