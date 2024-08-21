@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { styles } from './BlurWrap.styles';
 
 type BlurWrapProps = {
@@ -13,9 +13,12 @@ export default function BlurWrap({ children, widthQuery = 'screen' }: BlurWrapPr
 	const [lastTimestamp, setLastTimestamp] = useState(0);
 	const [scaledValue, setScaledValue] = useState(0);
 
+	const count = useRef(0);
+
 	useEffect(() => {
 		const handleScroll = () => {
-			if (window.matchMedia(widthQuery).matches) {
+			count.current++;
+			if (window.matchMedia(widthQuery).matches && count.current % 3 === 0) {
 				const scrollTop = window.scrollY;
 				const currentTimestamp = Date.now();
 				const deltaY = Math.abs(scrollTop - lastScrollTop);
