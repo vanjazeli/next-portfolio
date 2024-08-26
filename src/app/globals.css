@@ -79,5 +79,5 @@ html {
 }
 
 .animate-negative-infinite {
-  animation: negative-infinite 30s linear infinite;
+  animation: negative-infinite 20s linear infinite;
 }
