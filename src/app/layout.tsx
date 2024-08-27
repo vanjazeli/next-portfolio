@@ -14,8 +14,8 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en">
-			<body className={styles.body}>
+		<html lang="en" className={styles.document}>
+			<body>
 				<ScrollIndicator />
 				<SmoothScroller>{children}</SmoothScroller>
 			</body>

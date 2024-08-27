@@ -1,3 +1,3 @@
 export const styles = {
-	body: 'bg-slate-900',
+	document: 'bg-slate-900',
 };
