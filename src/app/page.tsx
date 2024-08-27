@@ -18,7 +18,7 @@ import LoadingOverlay from '@/components/client/LoadingOverlay/LoadingOverlay';
 
 export default function Home() {
 	return (
-		<BlurWrap widthQuery={DevicesE.mobile}>
+		<>
 			<LoadingOverlay />
 			<div className={styles.pageWrap}>
 				<div className={styles.container}>
@@ -58,6 +58,6 @@ export default function Home() {
 					</div>
 				</div>
 			</div>
-		</BlurWrap>
+		</>
 	);
 }
