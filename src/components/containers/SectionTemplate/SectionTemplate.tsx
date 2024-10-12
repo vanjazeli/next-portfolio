@@ -5,8 +5,10 @@ type SectionTemplateProps = {
 };
 
 export default function SectionTemplate({ children }: SectionTemplateProps) {
-	<>
-		<section>{children}</section>;
-		<Spacer />
-	</>;
+	return (
+		<>
+			<section>{children}</section>;
+			<Spacer />
+		</>
+	);
 }
