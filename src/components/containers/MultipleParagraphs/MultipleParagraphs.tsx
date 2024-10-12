@@ -13,7 +13,7 @@ export default function MultipleParagraphs({ content }: MultipleParagraphsProps)
 	const { heading, paragraphs, link } = content;
 
 	return (
-		<section>
+		<div>
 			{heading && <h2 className={styles.heading}>{heading}</h2>}
 			{paragraphs && (
 				<div className={styles.paragraphsContainer}>
@@ -23,6 +23,6 @@ export default function MultipleParagraphs({ content }: MultipleParagraphsProps)
 				</div>
 			)}
 			{link && <ArrowLink href={link.url} text={link.text} target={link.target} variant={link.variant} />}
-		</section>
+		</div>
 	);
 }

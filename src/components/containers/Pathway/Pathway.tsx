@@ -38,7 +38,7 @@ export default function Pathway({ content }: PathwayProps) {
 	const { items } = content;
 
 	return (
-		<section className={styles.section}>
+		<div className={styles.section}>
 			{items && (
 				<ul className={styles.list}>
 					{items.map((item, itemIndex) => {
@@ -80,6 +80,6 @@ export default function Pathway({ content }: PathwayProps) {
 					})}
 				</ul>
 			)}
-		</section>
+		</div>
 	);
 }

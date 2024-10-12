@@ -13,7 +13,7 @@ export default function InfiniteSlides({ content }: InfiniteSlidesProps) {
 	const { sliders } = content;
 
 	return (
-		<section className={styles.section}>
+		<div className={styles.section}>
 			{sliders && (
 				<ul className={styles.legendList}>
 					{sliders.map(({ name, color }, sliderIndex) => (
@@ -48,6 +48,6 @@ export default function InfiniteSlides({ content }: InfiniteSlidesProps) {
 					))}
 				</div>
 			)}
-		</section>
+		</div>
 	);
 }

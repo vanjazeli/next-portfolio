@@ -1,5 +1,6 @@
 import Header from '@/components/containers/Header/Header';
 import { headerContent } from '@/components/containers/Header/Header.content';
+import SectionTemplate from '@/components/containers/SectionTemplate/SectionTemplate';
 import MultipleParagraphs from '@/components/containers/MultipleParagraphs/MultipleParagraphs';
 import { summaryContent, skillsContent, careerContent, clientsAndProjectsContent, miniLibrariesContent } from '@/components/containers/MultipleParagraphs/MultipleParagraphs.content';
 import CardLinks from '@/components/containers/CardLinks/CardLinks';
@@ -26,28 +27,33 @@ export default function Home() {
 						</div>
 						<div className={styles.mainContent}>
 							<main>
-								<MultipleParagraphs content={summaryContent} />
-								<Spacer />
+								<SectionTemplate>
+									<MultipleParagraphs content={summaryContent} />
+								</SectionTemplate>
 
-								<MultipleParagraphs content={skillsContent} />
-								<Spacer isSmall />
-								<InfiniteSlide content={skillsSliderContent} />
-								<Spacer />
+								<SectionTemplate>
+									<MultipleParagraphs content={skillsContent} />
+									<Spacer isSmall />
+									<InfiniteSlide content={skillsSliderContent} />
+								</SectionTemplate>
 
-								<MultipleParagraphs content={careerContent} />
-								<Spacer isSmall />
-								<Pathway content={careerListContent} />
-								<Spacer />
+								<SectionTemplate>
+									<MultipleParagraphs content={careerContent} />
+									<Spacer isSmall />
+									<Pathway content={careerListContent} />
+								</SectionTemplate>
 
-								<MultipleParagraphs content={clientsAndProjectsContent} />
-								<Spacer isSmall />
-								<CardLinks content={projectLinksContent} />
-								<Spacer />
+								<SectionTemplate>
+									<MultipleParagraphs content={clientsAndProjectsContent} />
+									<Spacer isSmall />
+									<CardLinks content={projectLinksContent} />
+								</SectionTemplate>
 
-								<MultipleParagraphs content={miniLibrariesContent} />
-								<Spacer isSmall />
-								<CardLinks content={playgroundContent} />
-								<Spacer />
+								<SectionTemplate>
+									<MultipleParagraphs content={miniLibrariesContent} />
+									<Spacer isSmall />
+									<CardLinks content={playgroundContent} />
+								</SectionTemplate>
 							</main>
 							<Footer content={footerContent} />
 						</div>
