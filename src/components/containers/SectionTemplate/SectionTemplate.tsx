@@ -7,7 +7,7 @@ type SectionTemplateProps = {
 export default function SectionTemplate({ children }: SectionTemplateProps) {
 	return (
 		<>
-			<section>{children}</section>;
+			<section>{children}</section>
 			<Spacer />
 		</>
 	);
