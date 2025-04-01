@@ -13,12 +13,6 @@ export const summaryContent: MultipleParagraphsContentT = {
 			text: 'Feel free to browse through my résumé to find out a little bit more about me.',
 		},
 	],
-	link: {
-		url: 'https://vanjazeli.github.io/resume/',
-		text: 'View Full Résumé',
-		target: '_blank',
-		variant: 'underline',
-	},
 };
 
 export const skillsContent: MultipleParagraphsContentT = {
