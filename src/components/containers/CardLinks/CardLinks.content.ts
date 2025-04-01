@@ -59,6 +59,13 @@ export const projectLinksContent: CardLinksContentT = [
 	},
 	{
 		variant: 'nonClickable',
+		heading: 'Cruise Passenger Verification PWA',
+		description: 'By integrating with government APIs, this PWA enabled cruise staff to verify visas, permits, and crew lists, ensuring full offline functionality for seamless document validation.',
+		location: 'UK',
+		additionalItems: ['PWA', 'React', 'TypeScript', 'Zustand', 'React Hook Form', 'Tailwind CSS', 'Storybook', 'Tanstack Query', 'Axios'],
+	},
+	{
+		variant: 'nonClickable',
 		heading: 'Blockchain Document Transfer Application',
 		description: 'By utilizing blockchain for document validation, this app provides a reliable and immutable method for the shipping industry to authenticate and track essential paperwork, reducing the risk of fraud and errors.',
 		location: 'Israel',
