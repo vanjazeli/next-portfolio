@@ -58,6 +58,7 @@ export default function CardLinks({ content }: CardLinksProps) {
 								</div>
 								<div className={styles.textContainer}>
 									{item.heading && <h3 className={styles.heading}>{item.heading}</h3>}
+									{item.role && <p className={styles.role}>{item.role}</p>}
 									{item.description && <p className={styles.description}>{item.description}</p>}
 									{item.location && (
 										<div className={styles.locationWrap}>

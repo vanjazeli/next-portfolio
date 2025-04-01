@@ -13,6 +13,7 @@ export type ClickableCardT = {
 export type NonClickableCardT = {
 	variant: 'nonClickable';
 	heading: string;
+	role: string;
 	description: string;
 	location: string;
 	additionalItems: Array<string>;

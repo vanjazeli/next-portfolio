@@ -16,6 +16,7 @@ export const styles = {
 	nonClickableImageWrap: 'border border-cyan-500 rounded-md aspect-square flex justify-center items-center',
 	nonClickableImageText: 'text-xl sm:text-4xl lg:text-xl xl:text-4xl font-bold text-slate-400',
 	heading: 'text-lg md:text-xl font-bold text-slate-200 mb-1 last:mb-0',
+	role: 'text-xs md:text-base text-slate-400 mb-2',
 	locationWrap: 'flex align-center gap-2 text-slate-200 mb-4 last:mb-0',
 	locationIcon: 'w-4 text-slate-400',
 	locationTextWrap: 'flex flex-col md:flex-row md:gap-2',

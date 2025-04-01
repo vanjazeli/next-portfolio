@@ -60,6 +60,7 @@ export const projectLinksContent: CardLinksContentT = [
 	{
 		variant: 'nonClickable',
 		heading: 'Cruise Passenger Verification PWA',
+		role: 'Lead Front-end Engineer',
 		description: 'By integrating with government APIs, this PWA enabled cruise staff to verify visas, permits, and crew lists, ensuring full offline functionality for seamless document validation.',
 		location: 'UK',
 		additionalItems: ['PWA', 'React', 'TypeScript', 'Zustand', 'React Hook Form', 'Tailwind CSS', 'Storybook', 'Tanstack Query', 'Axios'],
@@ -67,6 +68,7 @@ export const projectLinksContent: CardLinksContentT = [
 	{
 		variant: 'nonClickable',
 		heading: 'Blockchain Document Transfer Application',
+		role: 'Front-end Engineer',
 		description: 'By utilizing blockchain for document validation, this app provides a reliable and immutable method for the shipping industry to authenticate and track essential paperwork, reducing the risk of fraud and errors.',
 		location: 'Israel',
 		additionalItems: ['React', 'TypeScript', 'Zustand', 'React Hook Form', 'Material UI', 'Storybook', 'Tanstack Query'],
@@ -74,6 +76,7 @@ export const projectLinksContent: CardLinksContentT = [
 	{
 		variant: 'nonClickable',
 		heading: 'World-Renowned Clothing Brand Website',
+		role: 'Front-end Engineer',
 		description: 'A project created for a world-renowned clothing brand, featuring an intricate design and numerous animations. The project was used as a sponsorship platform during a global sporting event, amplifying brand presence and audience interaction.',
 		location: 'Netherlands',
 		additionalItems: ['Next.js', 'TypeScript', 'Atomic Design', 'SCSS', 'Pixel Perfect', 'GSAP', 'Storybook'],
