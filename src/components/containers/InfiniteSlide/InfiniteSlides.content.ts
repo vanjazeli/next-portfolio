@@ -52,10 +52,16 @@ export const skillsSliderContent: InfiniteSlidesContentT = {
 					text: 'Zustand',
 				},
 				{
+					text: 'Immer',
+				},
+				{
 					text: 'Material UI',
 				},
 				{
-					text: 'Tanstack Query',
+					text: 'Shadcn/UI',
+				},
+				{
+					text: 'TanStack Query',
 				},
 				{
 					text: 'Axios',
@@ -67,22 +73,34 @@ export const skillsSliderContent: InfiniteSlidesContentT = {
 					text: 'React Hook Form',
 				},
 				{
+					text: 'Yup',
+				},
+				{
+					text: 'Zod',
+				},
+				{
 					text: 'Storybook',
 				},
 				{
 					text: 'Accessibility',
 				},
 				{
-					text: 'Three.js',
+					text: 'i18n',
 				},
 				{
-					text: 'Atomic Design',
+					text: 'Three.js',
 				},
 				{
 					text: 'Jest',
 				},
 				{
+					text: 'Vitest',
+				},
+				{
 					text: 'React Testing Library',
+				},
+				{
+					text: 'Atomic Design',
 				},
 			],
 		},

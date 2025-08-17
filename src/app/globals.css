@@ -3,74 +3,76 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Inter';
-  src: url('/fonts/InterBold.woff2') format('woff2'),
-    url('/fonts/InterBold.woff') format('woff'),
-    url('/fonts/InterBold.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Inter';
+	src:
+		url('/fonts/InterBold.woff2') format('woff2'),
+		url('/fonts/InterBold.woff') format('woff'),
+		url('/fonts/InterBold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'Inter';
-  src: url('/fonts/InterRegular.woff2') format('woff2'),
-    url('/fonts/InterRegular.woff') format('woff'),
-    url('/fonts/InterRegular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Inter';
+	src:
+		url('/fonts/InterRegular.woff2') format('woff2'),
+		url('/fonts/InterRegular.woff') format('woff'),
+		url('/fonts/InterRegular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
 }
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+	--foreground-rgb: 0, 0, 0;
+	--background-start-rgb: 214, 219, 220;
+	--background-end-rgb: 255, 255, 255;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+	:root {
+		--foreground-rgb: 255, 255, 255;
+		--background-start-rgb: 0, 0, 0;
+		--background-end-rgb: 0, 0, 0;
+	}
 }
 
 ::-webkit-scrollbar {
-  display: none;
+	display: none;
 }
 
 html {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+	.text-balance {
+		text-wrap: balance;
+	}
 }
 
 @keyframes negative-infinite {
-  0% {
-    transform: translateX(0%);
-  }
+	0% {
+		transform: translateX(0%);
+	}
 
-  100% {
-    transform: translateX(-100%);
-  }
+	100% {
+		transform: translateX(-100%);
+	}
 }
 
 @keyframes positive-infinite {
-  0% {
-    transform: translateX(-100%);
-  }
+	0% {
+		transform: translateX(-100%);
+	}
 
-  100% {
-    transform: translateX(0);
-  }
+	100% {
+		transform: translateX(0);
+	}
 }
 
 .animate-negative-infinite {
-  animation: negative-infinite 20s linear infinite;
+	animation: negative-infinite 20s linear infinite;
 }

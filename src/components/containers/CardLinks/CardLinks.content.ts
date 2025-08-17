@@ -5,16 +5,16 @@ export const projectLinksContent: CardLinksContentT = [
 		variant: 'clickable',
 		image: {
 			url: '/images/wunder-wasabi.jpg',
-			alt: 'Wunder and Wasabi - Crypto & NFT - Preview image',
+			alt: 'Wunder and Wasabi - Crypto and NFT - Preview image',
 			width: 1920,
 			height: 1080,
 		},
 		link: {
 			href: 'https://vanjazeli.github.io/wunder-and-wasabi/',
-			text: 'Wunder and Wasabi - Crypto & NFT',
+			text: 'Wunder and Wasabi - Crypto and NFT',
 			target: '_blank',
 		},
-		description: 'My approach to the front-end code of the "Wunder and Wasabi - Crypto & NFT" website.',
+		description: 'My approach to the front-end code of the "Wunder and Wasabi - Crypto and NFT" website.',
 		externalLinks: [
 			{
 				href: 'https://github.com/vanjazeli/wunder-and-wasabi',
@@ -61,25 +61,25 @@ export const projectLinksContent: CardLinksContentT = [
 		variant: 'nonClickable',
 		heading: 'Cruise Passenger Verification PWA',
 		role: 'Lead Front-end Engineer',
-		description: 'By integrating with government APIs, this PWA enabled cruise staff to verify visas, permits, and crew lists, ensuring full offline functionality for seamless document validation.',
+		description: "I led the front-end development of a PWA that integrated with government APIs to verify passengers' paperwork and permits for cruises. My responsibilities included setting up the front-end from scratch, developing the application, and guiding the front-end part of the project in the right direction. The app allowed cruise employees to check visas, permits, and list cruise members, ensuring offline functionality in areas without internet connection.",
 		location: 'UK',
-		additionalItems: ['PWA', 'React', 'TypeScript', 'Zustand', 'React Hook Form', 'Tailwind CSS', 'Storybook', 'Tanstack Query', 'Axios'],
+		additionalItems: ['PWA', 'React', 'TypeScript', 'Zustand', 'React Hook Form', 'Tailwind CSS', 'Shadcn/UI', 'Storybook', 'TanStack Query', 'Axios', 'Vitest', 'React Testing Library'],
 	},
 	{
 		variant: 'nonClickable',
 		heading: 'Blockchain Document Transfer Application',
 		role: 'Front-end Engineer',
-		description: 'By utilizing blockchain for document validation, this app provides a reliable and immutable method for the shipping industry to authenticate and track essential paperwork, reducing the risk of fraud and errors.',
+		description: 'I engaged in developing a front-end system for the blockchain-powered application that aims to replace paper in the shipping industry. The focus was on creating a secure and tamper-proof document transfer process. My contributions included collaboration with both internal and external teams of developers to achieve a highly performat and user-friendly experience. This experience not only enhanced my technical skills but also provided me with the opportunity to collaborate with highly skilled professionals, learning and gaining insights that have significantly contributed to my growth.',
 		location: 'Israel',
-		additionalItems: ['React', 'TypeScript', 'Zustand', 'React Hook Form', 'Material UI', 'Storybook', 'Tanstack Query'],
+		additionalItems: ['React', 'TypeScript', 'Zustand', 'React Hook Form', 'Material UI', 'Storybook', 'TanStack Query', 'Jest', 'React Testing Library'],
 	},
 	{
 		variant: 'nonClickable',
-		heading: 'World-Renowned Clothing Brand Website',
+		heading: 'World-Renowned Clothing Brand Store',
 		role: 'Front-end Engineer',
-		description: 'A project created for a world-renowned clothing brand, featuring an intricate design and numerous animations. The project was used as a sponsorship platform during a global sporting event, amplifying brand presence and audience interaction.',
+		description: 'I contributed to the front-end development of a well-known clothing brandʼs webstore, focusing on building complex, highly animated UI designs that delivered a smooth user experience using CSS and GSAP. I also worked extensively with Next.js to improve the siteʼs performance and ensure it could scale effectively.',
 		location: 'Netherlands',
-		additionalItems: ['Next.js', 'TypeScript', 'Atomic Design', 'SCSS', 'Pixel Perfect', 'GSAP', 'Storybook'],
+		additionalItems: ['Next.js', 'TypeScript', 'SCSS', 'GSAP', 'Atomic Design'],
 	},
 ];
 
