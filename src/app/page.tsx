@@ -14,6 +14,8 @@ import { footerContent } from '@/components/containers/Footer/Footer.content';
 import Spacer from '../components/ui/Spacer/Spacer';
 import { styles } from './page.styles';
 import LoadingOverlay from '@/components/client/LoadingOverlay/LoadingOverlay';
+import BlurWrap from '@/components/client/BlurWrap/BlurWrap';
+import { DevicesE } from '@/components/client/BlurWrap/BlurWrap.enums';
 
 export default function Home() {
 	return (
@@ -27,33 +29,35 @@ export default function Home() {
 						</div>
 						<div className={styles.mainContent}>
 							<main>
-								<SectionTemplate>
-									<MultipleParagraphs content={summaryContent} />
-								</SectionTemplate>
+								<BlurWrap widthQuery={DevicesE.desktop}>
+									<SectionTemplate>
+										<MultipleParagraphs content={summaryContent} />
+									</SectionTemplate>
 
-								<SectionTemplate>
-									<MultipleParagraphs content={skillsContent} />
-									<Spacer isSmall />
-									<InfiniteSlide content={skillsSliderContent} />
-								</SectionTemplate>
+									<SectionTemplate>
+										<MultipleParagraphs content={skillsContent} />
+										<Spacer isSmall />
+										<InfiniteSlide content={skillsSliderContent} />
+									</SectionTemplate>
 
-								<SectionTemplate>
-									<MultipleParagraphs content={careerContent} />
-									<Spacer isSmall />
-									<Pathway content={careerListContent} />
-								</SectionTemplate>
+									<SectionTemplate>
+										<MultipleParagraphs content={careerContent} />
+										<Spacer isSmall />
+										<Pathway content={careerListContent} />
+									</SectionTemplate>
 
-								<SectionTemplate>
-									<MultipleParagraphs content={clientsAndProjectsContent} />
-									<Spacer isSmall />
-									<CardLinks content={projectLinksContent} />
-								</SectionTemplate>
+									<SectionTemplate>
+										<MultipleParagraphs content={clientsAndProjectsContent} />
+										<Spacer isSmall />
+										<CardLinks content={projectLinksContent} />
+									</SectionTemplate>
 
-								<SectionTemplate>
-									<MultipleParagraphs content={miniLibrariesContent} />
-									<Spacer isSmall />
-									<CardLinks content={playgroundContent} />
-								</SectionTemplate>
+									<SectionTemplate>
+										<MultipleParagraphs content={miniLibrariesContent} />
+										<Spacer isSmall />
+										<CardLinks content={playgroundContent} />
+									</SectionTemplate>
+								</BlurWrap>
 							</main>
 							<Footer content={footerContent} />
 						</div>
